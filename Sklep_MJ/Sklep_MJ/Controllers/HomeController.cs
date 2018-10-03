@@ -15,15 +15,7 @@ namespace Sklep_MJ.Controllers
 
         public ActionResult Index()
         {
-            Category category = new Category
-            {
-                Name = "asp.net mvc",
-                FileIcon = "aspNetMvc.png",
-                Description = "opis"
-            };
-
-            //db.Categories.Add(category);
-            //db.SaveChanges();
+            var categories = db.Categories.ToList();
             return View();
         }
     }

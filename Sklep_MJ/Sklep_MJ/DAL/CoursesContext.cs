@@ -12,6 +12,11 @@ namespace Sklep_MJ.DAL
         public CoursesContext() : base("CoursesContext")
         { }
 
+        static CoursesContext()
+        {
+            Database.SetInitializer<CoursesContext>(new CoursesInitializer());
+        }
+
         public DbSet<Course> Courses { get; set; }
         public DbSet<Category> Categories { get; set; } 
         public DbSet<Order> Orders { get; set; }

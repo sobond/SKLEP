@@ -116,6 +116,23 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810030754447_InitialCreate.cs" />
+    <Compile Include="Migrations\201810030754447_InitialCreate.Designer.cs">
+      <DependentUpon>201810030754447_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810030846586_add shortdescription to courses.cs" />
+    <Compile Include="Migrations\201810030846586_add shortdescription to courses.Designer.cs">
+      <DependentUpon>201810030846586_add shortdescription to courses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810030912036_add test field to course.cs" />
+    <Compile Include="Migrations\201810030912036_add test field to course.Designer.cs">
+      <DependentUpon>201810030912036_add test field to course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810030914247_remove test field from course.cs" />
+    <Compile Include="Migrations\201810030914247_remove test field from course.Designer.cs">
+      <DependentUpon>201810030914247_remove test field from course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Order.cs" />
@@ -141,6 +158,20 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201810030754447_InitialCreate.resx">
+      <DependentUpon>201810030754447_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810030846586_add shortdescription to courses.resx">
+      <DependentUpon>201810030846586_add shortdescription to courses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810030912036_add test field to course.resx">
+      <DependentUpon>201810030912036_add test field to course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810030914247_remove test field from course.resx">
+      <DependentUpon>201810030914247_remove test field from course.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

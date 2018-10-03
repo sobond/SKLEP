@@ -1,21 +1,20 @@
-﻿using Sklep_MJ.Models;
+﻿using Sklep_MJ.Migrations;
+using Sklep_MJ.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Web;
 
 namespace Sklep_MJ.DAL
 {
-    public class CoursesInitializer : DropCreateDatabaseAlways<CoursesContext>
-    {
-        protected override void Seed(CoursesContext context)
-        {
-            SeedCoursesData(context);
-            base.Seed(context);
-        }
 
-        private void SeedCoursesData(CoursesContext context)
+    public class CoursesInitializer : MigrateDatabaseToLatestVersion<CoursesContext, Configuration>
+    {
+
+
+        public static void SeedCoursesData(CoursesContext context)
         {
             var categories = new List<Category>
             {
@@ -28,7 +27,7 @@ namespace Sklep_MJ.DAL
                 new Category(){CategoryId=7, Name="c#", FileIcon="c#.png", Description="opis c#"}
                 
             };
-            categories.ForEach(c => context.Categories.Add(c));
+            categories.ForEach(c => context.Categories.AddOrUpdate(c));
             context.SaveChanges();
 
             var courses = new List<Course>
@@ -39,7 +38,7 @@ namespace Sklep_MJ.DAL
                 new Course(){Author = "romek", Title="asp.net mvc5", CategoryId = 1, Price = 140, Bestseller = true, FileIcon = "romek.png", DateAdd = DateTime.Now, Description = "kurs romka"},
 
             };
-            courses.ForEach(c => context.Courses.Add(c));
+            courses.ForEach(c => context.Courses.AddOrUpdate(c));
             context.SaveChanges();
         }
     }

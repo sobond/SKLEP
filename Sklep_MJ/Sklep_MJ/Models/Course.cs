@@ -26,6 +26,7 @@ namespace Sklep_MJ.Models
         public decimal Price { get; set; }
         public bool Bestseller { get; set; }
         public bool Hidden { get; set; }
+        public string ShortDescription { get; set; }
 
         public virtual Category Category { get; set; }
 

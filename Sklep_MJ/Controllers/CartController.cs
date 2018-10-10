@@ -6,22 +6,18 @@ using System.Web.Mvc;
 
 namespace Sklep_MJ.Controllers
 {
-    public class CoursesController : Controller
+    public class CartController : Controller
     {
-        // GET: Courses
+        // GET: Chart
         public ActionResult Index()
         {
             return View();
         }
-        public ActionResult List(string name)
+
+        public ActionResult AddToCart(string id)
         {
             return View();
         }
-
-        public ActionResult Details(string id)
-        {
-            return View();
-        }
-
+        
     }
 }

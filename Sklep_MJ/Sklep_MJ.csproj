@@ -179,6 +179,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DAL\CoursesContext.cs" />
@@ -230,6 +231,8 @@
     <Content Include="Views\Home\Regulations.cshtml" />
     <Content Include="Views\Home\Rewiews.cshtml" />
     <Content Include="Views\Courses\List.cshtml" />
+    <Content Include="Views\Courses\Details.cshtml" />
+    <Content Include="Views\Cart\AddToCart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -239,6 +242,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Chart\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201810030754447_InitialCreate.resx">

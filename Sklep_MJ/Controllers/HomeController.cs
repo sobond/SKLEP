@@ -18,5 +18,10 @@ namespace Sklep_MJ.Controllers
             var categories = db.Categories.ToList();
             return View();
         }
+
+        public ActionResult StaticPages(string name)
+        {
+            return View(name);
+        }
     }
 }

@@ -16,7 +16,7 @@ namespace Sklep_MJ
             routes.MapRoute(
                 name:"StaticPages",
                 url:"pages/{name}.html",
-                defaults: new {controler = "Home", action = "StaticPages"}
+                defaults: new { controller = "Home", action = "StaticPages"}
             );
 
             routes.MapRoute(

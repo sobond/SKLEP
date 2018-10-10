@@ -18,7 +18,7 @@ namespace Sklep_MJ.DAL
         {
             var categories = new List<Category>
             {
-                new Category(){CategoryId=1, Name="asp", FileIcon="asp.png", Description="opis asp"},
+                new Category(){CategoryId=1, Name="asp", FileIcon="aspnet.png", Description="opis asp"},
                 new Category(){CategoryId=2, Name="java", FileIcon="java.png", Description="opis java"},
                 new Category(){CategoryId=3, Name="php", FileIcon="php.png", Description="opis php"},
                 new Category(){CategoryId=4, Name="html", FileIcon="html.png", Description="opis html"},

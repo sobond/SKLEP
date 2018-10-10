@@ -1,4 +1,5 @@
 ﻿@model Sklep_MJ.ViewModels.HomeViewModel
+@using Sklep_MJ.Infrastructure
 
 @{ 
     ViewBag.Title = "Sklep MJ";
@@ -9,7 +10,7 @@
         <ul>
             <li>
                 <a href="@Url.Action("List", "Courses", new { categoryName = category.Name.ToLower() },null)"
-                   style="background-image: url(../Content/Categories/aspnet.png); ">
+                   style="background-image: url(@Url.CategoriesIconsPath(category.FileIcon)); ">
                     @category.Name
                 </a>
             </li>

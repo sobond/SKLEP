@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sklep_MJ", "Sklep_MJ\Sklep_MJ.csproj", "{11C209AA-0B54-4AD8-91F0-7920ED46672B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sklep_MJ.Tests", "Sklep_MJ.Tests\Sklep_MJ.Tests.csproj", "{02942257-C278-4F3E-BF50-462DCC40DC72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11C209AA-0B54-4AD8-91F0-7920ED46672B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11C209AA-0B54-4AD8-91F0-7920ED46672B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11C209AA-0B54-4AD8-91F0-7920ED46672B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11C209AA-0B54-4AD8-91F0-7920ED46672B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02942257-C278-4F3E-BF50-462DCC40DC72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02942257-C278-4F3E-BF50-462DCC40DC72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02942257-C278-4F3E-BF50-462DCC40DC72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02942257-C278-4F3E-BF50-462DCC40DC72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1AFA0921-1943-4620-A548-02AB7C6476CA}
+	EndGlobalSection
+EndGlobal

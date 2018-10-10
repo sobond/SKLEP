@@ -171,6 +171,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DAL\CoursesContext.cs" />
     <Compile Include="DAL\CoursesInitializer.cs" />
@@ -200,6 +201,7 @@
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderPosition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\HomeViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -217,6 +219,7 @@
     <Content Include="Views\Home\Help.cshtml" />
     <Content Include="Views\Home\Regulations.cshtml" />
     <Content Include="Views\Home\Rewiews.cshtml" />
+    <Content Include="Views\Courses\List.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

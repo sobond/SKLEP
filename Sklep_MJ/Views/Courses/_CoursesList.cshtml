@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Sklep_MJ.Models.Course>
+@using Sklep_MJ.Infrastructure
+
+<div id="SekcjaListaKategori">
+    <ul class="KursyTrzyKolumny KursCena">
+        @foreach (var course in Model)
+        {
+            <li>
+                <article>
+                    <a class="dodajDoKoszykaLink" href="@Url.Action("AddToCart","Cart",new { id = course.CourseId },null)">
+                        <img src="@Url.Content("~/Content/Images/koszyk.png")" />
+                    </a>
+                    @if (course.Bestseller)
+                    {
+                        <div class="bestsellerFlag"></div>
+                    }
+                    <a class="kursSzczegolyLink" href="@Url.Action("Details", "Courses", new { id = course.CourseId },null)">
+                        <img class="kurs" src="@Url.CoursesIconsPath(course.FileIcon)" />
+                        <h1>
+                            @course.Author - @course.Title
+                        </h1>
+                    </a>
+                </article>
+            </li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Sklep_MJ.Models.Category>
+@using Sklep_MJ.Infrastructure
+
+<nav class="KategorieVertical">
+    <ul>
+        @foreach (var category in Model)
+        {
+            <li>
+                <a href="@Url.Action("List","Courses", new { name = category.Name.ToLower() },null)" 
+                   style="background-image: url(@Url.CategoriesIconsPath(category.FileIcon)); ">
+                    @category.Name
+                </a>
+            </li>
+        }
+    </ul>
+</nav>

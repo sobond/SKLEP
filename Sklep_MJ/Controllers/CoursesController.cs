@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sklep_MJ.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,7 @@ namespace Sklep_MJ.Controllers
 {
     public class CoursesController : Controller
     {
+        private CoursesContext db = new CoursesContext();
         // GET: Courses
         public ActionResult Index()
         {
@@ -15,7 +17,9 @@ namespace Sklep_MJ.Controllers
         }
         public ActionResult List(string name)
         {
-            return View();
+            var category = db.Categories.Include("Courses").Where(k => k.Name.ToUpper() == name.ToUpper()).Single();
+            var courses = category.Courses.ToList();
+            return View(courses);
         }
 
         public ActionResult Details(string id)
@@ -23,5 +27,11 @@ namespace Sklep_MJ.Controllers
             return View();
         }
 
+        [ChildActionOnly]
+        public ActionResult CategoriesMenu()
+        {
+            var categories = db.Categories.ToList();
+            return PartialView("_CategoriesMenu", categories);
+        }
     }
 }

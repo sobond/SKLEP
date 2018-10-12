@@ -24,6 +24,13 @@ namespace Sklep_MJ
                 url: "Category/{name}",
                 defaults: new { Controller = "Courses", Action = "List" }
             );
+
+            routes.MapRoute(
+                name: "CoursesDatails",
+                url: "Course-{id}",
+                defaults: new { Controller = "Courses", Action = "Details" }
+            );
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

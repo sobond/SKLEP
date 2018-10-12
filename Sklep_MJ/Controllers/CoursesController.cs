@@ -24,7 +24,8 @@ namespace Sklep_MJ.Controllers
 
         public ActionResult Details(string id)
         {
-            return View();
+            var course = db.Courses.Find(int.Parse(id));
+            return View(course);
         }
 
         [ChildActionOnly]

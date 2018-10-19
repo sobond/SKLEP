@@ -15,7 +15,7 @@
             </a>
         </div>
 
-        <form id="search-from">
+        <form id="search-form" method="get" data-ajax="true" data-ajax-target="#SekcjaListaKategori">
             <input id="search-filter" type="search" name="searchQuery"
                    data-autocomplete-source="@Url.Action("CoursesTips")"
                    placeholder="Wprowadź teskt, by filtrować..." />
@@ -48,7 +48,26 @@
                 };
                 $input.autocomplete(options);
             };
+
+            var ajaxSumbit = function () {
+                var $form = $(this);
+                var settings = {
+                    data: $(this).serialize(),
+                    url: $(this).attr("action"),
+                    type: $(this).attr("method")
+                };
+                $.ajax(settings).done(function (result) {
+                    var $targetElement = $($form.data("ajax-target"));
+                    var $newContent = $(result);
+                    $($targetElement).replaceWith($newContent);
+                    $newContent.effect("slide");
+                });
+
+                return false;
+            }
+
             $("#search-filter").each(setupAutoComplete);
+            $("#search-form").submit(ajaxSumbit);
         });
     </script>
 

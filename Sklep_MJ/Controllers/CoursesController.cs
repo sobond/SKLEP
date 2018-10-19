@@ -15,10 +15,15 @@ namespace Sklep_MJ.Controllers
         {
             return View();
         }
-        public ActionResult List(string name)
+        public ActionResult List(string name, string searchQuery=null)
         {
             var category = db.Categories.Include("Courses").Where(k => k.Name.ToUpper() == name.ToUpper()).Single();
-            var courses = category.Courses.ToList();
+            var courses = category.Courses.Where(a => (searchQuery == null || a.Title.ToLower().Contains(searchQuery.ToLower()) || a.Author.ToLower().Contains(searchQuery.ToLower())) && !a.Hidden);
+
+            if (Request.IsAjaxRequest())
+            {
+                return PartialView("_CoursesList", courses);
+            }
             return View(courses);
         }
 

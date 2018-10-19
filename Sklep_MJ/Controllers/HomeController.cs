@@ -1,4 +1,5 @@
 ﻿using Sklep_MJ.DAL;
+using Sklep_MJ.Infrastructure;
 using Sklep_MJ.Models;
 using Sklep_MJ.ViewModels;
 using System;
@@ -16,9 +17,42 @@ namespace Sklep_MJ.Controllers
 
         public ActionResult Index()
         {
-            var categories = db.Categories.ToList();
-            var news = db.Courses.Where(a => !a.Hidden).OrderByDescending(a => a.DateAdd).Take(3).ToList();
-            var bestsellers = db.Courses.Where(a => !a.Hidden && a.Bestseller).OrderBy(a => Guid.NewGuid()).Take(3).ToList();
+            ICacheProvider cache = new DefaultCacheProvider();
+
+            List<Category> categories;
+            if (cache.IsSet(Const.CategoriesCacheKey))
+            {
+                categories = cache.Get(Const.CategoriesCacheKey) as List<Category>;
+            }
+            else
+            {
+                categories = db.Categories.ToList();
+                cache.Set(Const.CategoriesCacheKey, categories, 60);
+            }
+
+
+            List<Course> news;
+            if (cache.IsSet(Const.NewsCacheKey))
+            {
+                news = cache.Get(Const.NewsCacheKey) as List<Course>;
+            }
+            else
+            {
+                news = db.Courses.Where(a => !a.Hidden).OrderByDescending(a => a.DateAdd).Take(3).ToList();
+                cache.Set(Const.NewsCacheKey, news, 60);
+            }
+
+            List<Course> bestsellers;
+            if (cache.IsSet(Const.BestsellersCacheKey))
+            {
+                bestsellers = cache.Get(Const.BestsellersCacheKey) as List<Course>;
+            }
+            else
+            {
+                bestsellers = db.Courses.Where(a => !a.Hidden && a.Bestseller).OrderBy(a => Guid.NewGuid()).Take(3).ToList();
+                cache.Set(Const.BestsellersCacheKey, bestsellers, 60);
+            }
+
 
             var vm = new HomeViewModel()
             {

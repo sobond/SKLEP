@@ -29,8 +29,11 @@ namespace Sklep_MJ.Controllers
         }
 
         [ChildActionOnly]
+        //atybut OutputCache pozwala na zmiane pobierania danych z cache zamiast z bazy danych (poprawa wydajności)
+        [OutputCache(Duration = 60000)]
         public ActionResult CategoriesMenu()
         {
+            
             var categories = db.Categories.ToList();
             return PartialView("_CategoriesMenu", categories);
         }

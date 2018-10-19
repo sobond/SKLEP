@@ -15,6 +15,13 @@
             </a>
         </div>
 
+        <form id="search-from">
+            <input id="search-filter" type="search" name="searchQuery"
+                   data-autocomplete-source="@Url.Action("CoursesTips")"
+                   placeholder="Wprowadź teskt, by filtrować..." />
+            <input type="submit" value="" />
+        </form>
+
         <div id="SekcjaListaKategori">
             @Html.Partial("_CoursesList")
         </div>
@@ -24,4 +31,25 @@
 
 @section Scripts{
     @System.Web.Optimization.Scripts.Render("~/bundles/jquery")
+
+
+    <script>
+        $(function () {
+            var setupAutoComplete = function () {
+                var $input = $(this);
+                var options = {
+                    source: $input.attr("data-autocomplete-source"),
+                    select: function (event, ui) {
+                        $input = $(this);
+                        $input.val(ui.item.label);
+                        var $form = $input.parents("form:first");
+                        $form.submit();
+                    }
+                };
+                $input.autocomplete(options);
+            };
+            $("#search-filter").each(setupAutoComplete);
+        });
+    </script>
+
 }

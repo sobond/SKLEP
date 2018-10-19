@@ -37,5 +37,12 @@ namespace Sklep_MJ.Controllers
             var categories = db.Categories.ToList();
             return PartialView("_CategoriesMenu", categories);
         }
+
+        public ActionResult CoursesTips(string term)
+        {
+            var courses = db.Courses.Where(a => !a.Hidden && a.Title.ToLower().Contains(term.ToLower())).Take(5).Select(a => new { label = a.Title });
+
+            return Json(courses, JsonRequestBehavior.AllowGet);
+        }
     }
 }

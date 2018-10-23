@@ -8,6 +8,8 @@ namespace Sklep_MJ.Controllers
 {
     public class CartController : Controller
     {
+        private CartManager cartManager;
+        
         // GET: Chart
         public ActionResult Index()
         {

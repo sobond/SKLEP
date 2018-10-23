@@ -36,7 +36,7 @@ namespace Sklep_MJ.Models
         public OrderStatus OrderStatus { get; set; }
         public decimal Price { get; set; }
 
-        List<OrderPosition> OrderPositions { get; set; }
+        public List<OrderPosition> OrderPositions { get; set; }
     }
 
 

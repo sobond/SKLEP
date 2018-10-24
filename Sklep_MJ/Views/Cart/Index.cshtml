@@ -22,26 +22,26 @@
             </div>
 
             <table id="koszykTabela">
-                @foreach (var position in Model.OrderPositions)
+                @foreach (var position in Model.CartPositions)
                 {
-                    <tr id="koszyk-wiersz-@position.course.CourseId">
+                    <tr id="koszyk-wiersz-@position.Course.CourseId">
                         <td>
-                            <a href="@Url.Action("Details","Courses", new { id = position.course.CourseId },null)">
-                                <img src="@Url.Content("~/Content/Courses/"+position.course.FileIcon)" />
+                            <a href="@Url.Action("Details","Courses", new { id = position.Course.CourseId },null)">
+                                <img src="@Url.Content("~/Content/Courses/"+position.Course.FileIcon)" />
                             </a>
                         </td>
                         <td>
-                            <a href="@Url.Action("Details","Courses", new { id = position.CourseId },null)">
-                                @position.course.Title
+                            <a href="@Url.Action("Details","Courses", new { id = position.Course.CourseId },null)">
+                                @position.Course.Title
                             </a>
                         </td>
-                        <td>Ilość: <span id="koszyk-ilosc-@position.course.CourseId">@position.Count</span></td>
+                        <td>Ilość: <span id="koszyk-ilosc-@position.Course.CourseId">@position.Count</span></td>
                         <td>@string.Format("{0:0.##}", position.Price) zł</td>
-                        <td><a class="usunKurs" data-id="@position.course.CourseId" href="#">Usuń</a></td>
+                        <td><a class="usunKurs" data-id="@position.Course.CourseId" href="#">Usuń</a></td>
                     </tr>
                 }
 
-                <tr id="koszyk-empty-message" @if (Model.OrderPositions != null && Model.OrderPositions.Count > 0) { <text> class="hidden" </text> }>
+                <tr id="koszyk-empty-message" @if (Model.CartPositions != null && Model.CartPositions.Count > 0) { <text> class="hidden" </text> }>
                     <td>Twój koszyk jest pusty</td>
                 </tr>
 
@@ -61,4 +61,40 @@
         </section>
     </div>
 </div>
+
+@section Scripts{
+    @System.Web.Optimization.Scripts.Render("~/bundles/jquery")
+
+    <script type="text/javascript">
+        $(function () {
+            $(".usunKurs").click(function () {
+                var recordToRemove = $(this).attr("data-id");
+
+                if (recordToRemove != '') {
+                    $.post("/Cart/RemoveFromCart", { "id": recordToRemove }, function (response) {
+                        if (response.RemovedCount == 0) {
+                            $('#koszyk-wiersz-' + response.RemovedId).fadeOut('slow', function () {
+                                if (response.CartItemsCount == 0) {
+                                    $("#koszyk-empty-message").removeClass("hidden");
+                                }
+                            });
+                        }
+                        else {
+                            $('#koszyk-ilosc-' + response.RemovedId).text(response.RemovedCount);
+                        }
+                        if (response.CartCount == 0) {
+                            $('#koszyk-button-zaplac').addClass('hidden');
+                            $('#CenaCalkowita').addClass('invisible');
+                        }
+                        $('#calkowita-cena').text(response.CartFullPrice);
+                        $('#koszyk-naglowek-ilosc-elementow').text(response.CartItemsCount);
+                    });
+                    return false;
+                }
+            });
+        });
+
+    </script>
+
+}
 

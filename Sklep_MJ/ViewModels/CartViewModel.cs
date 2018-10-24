@@ -8,7 +8,7 @@ namespace Sklep_MJ.ViewModels
 {
     public class CartViewModel
     {
-        public List<OrderPosition> OrderPositions { get; set; }
+        public List<CartPosition> CartPositions { get; set; }
         public decimal TotalPrice { get; set; }
     }
 }

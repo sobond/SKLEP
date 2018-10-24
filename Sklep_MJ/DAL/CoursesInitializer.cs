@@ -18,13 +18,13 @@ namespace Sklep_MJ.DAL
         {
             var categories = new List<Category>
             {
-                new Category(){CategoryId=1, Name="asp", FileIcon="aspnet.png", Description="opis asp"},
+                new Category(){CategoryId=1, Name="asp", FileIcon="asp.png", Description="opis asp"},
                 new Category(){CategoryId=2, Name="java", FileIcon="java.png", Description="opis java"},
                 new Category(){CategoryId=3, Name="php", FileIcon="php.png", Description="opis php"},
                 new Category(){CategoryId=4, Name="html", FileIcon="html.png", Description="opis html"},
                 new Category(){CategoryId=5, Name="css", FileIcon="css.png", Description="opis css"},
                 new Category(){CategoryId=6, Name="xml", FileIcon="xml.png", Description="opis xml"},
-                new Category(){CategoryId=7, Name="c#", FileIcon="c#.png", Description="opis c#"}
+                new Category(){CategoryId=7, Name="c#", FileIcon="c.png", Description="opis c#"}
                 
             };
             categories.ForEach(c => context.Categories.AddOrUpdate(c));

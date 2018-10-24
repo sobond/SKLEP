@@ -138,7 +138,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Categories\asp.png" />
     <Content Include="Content\Categories\aspnet.png" />
-    <Content Include="Content\Categories\c#.png" />
+    <Content Include="Content\Categories\c.png" />
     <Content Include="Content\Categories\csharp.png" />
     <Content Include="Content\Categories\css.png" />
     <Content Include="Content\Categories\html.png" />

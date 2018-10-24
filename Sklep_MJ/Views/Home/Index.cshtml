@@ -5,9 +5,10 @@
 }
 
 <nav class="kategorieHorizontal">
-    @foreach (var category in Model.Categories)
-    {
-        <ul>
+    <ul>
+        @foreach (var category in Model.Categories)
+        {
+
             <li>
                 <a href="@Url.Action("List", "Courses", new { name = category.Name.ToLower() }, null)"
                    style="background-image: url(@Url.CategoriesIconsPath(category.FileIcon)); ">
@@ -16,12 +17,15 @@
             </li>
 
 
-        </ul>
-    }
-    <a href="link">
+
+        }
+    </ul>
+    <a href="@Url.Content("~/")">
         <img id="baner" src="../Content/Images/baner.png" />
     </a>
 </nav>
+
+
 
 <section>
     <ul class="KursyTrzyKolumny duzaListaKursy">
@@ -47,7 +51,7 @@
 </section>
 <section>
     <ul class="KursyTrzyKolumny duzaListaKursy">
-       @foreach (var bestsellerItem in Model.BestSellers)
+        @foreach (var bestsellerItem in Model.BestSellers)
         {
             <li>
                 <article>
@@ -55,7 +59,7 @@
                         <img src="../Content/Images/koszyk.png" />
                     </a>
                     <a class="kursSzczegolyLink" href="@Url.Action("Details", "Courses", new { id = bestsellerItem.CourseId}, null)">
-                        <div class="newFlag"></div>
+                        <div class="bestsellerFlag"></div>
                         <img class="kurs" src="@Url.CoursesIconsPath(bestsellerItem.FileIcon)" />
                         <h1>
                             @bestsellerItem.Title - @bestsellerItem.Author

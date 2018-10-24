@@ -82,7 +82,7 @@
                         else {
                             $('#koszyk-ilosc-' + response.RemovedId).text(response.RemovedCount);
                         }
-                        if (response.CartCount == 0) {
+                        if (response.CartItemsCount == 0) {
                             $('#koszyk-button-zaplac').addClass('hidden');
                             $('#CenaCalkowita').addClass('invisible');
                         }

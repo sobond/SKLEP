@@ -1,9 +1,13 @@
-﻿using Sklep_MJ.DAL;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.Owin;
+using Sklep_MJ.DAL;
 using Sklep_MJ.Infrastructure;
+using Sklep_MJ.Models;
 using Sklep_MJ.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -20,6 +24,20 @@ namespace Sklep_MJ.Controllers
             db = new CoursesContext();
             sessionManager = new SessionManager();
             cartManager = new CartManager(sessionManager, db);
+        }
+
+        private ApplicationUserManager _userManager;
+
+        public ApplicationUserManager UserManager
+        {
+            get
+            {
+                return _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
+            }
+            private set
+            {
+                _userManager = value;
+            }
         }
 
         // GET: Chart
@@ -64,6 +82,57 @@ namespace Sklep_MJ.Controllers
 
             return Json(result);
         }
+
+        public async Task<ActionResult> Pay()
+        {
+            if (Request.IsAuthenticated)
+            {
+                var user = await UserManager.FindByIdAsync(User.Identity.GetUserId());
+
+                var order = new Order()
+                {
+                    FirstName = user.UserData.FirstName,
+                    SecondName = user.UserData.SecondName,
+                    Address = user.UserData.Address,
+                    City = user.UserData.City,
+                    PostCode = user.UserData.PostCode,
+                    Email = user.UserData.Email,
+                    Phone = user.UserData.Phone
+                };
+
+                return View(order);
+            }
+            return RedirectToAction("Login", "Account", new { returnUrl = Url.Action("Pay", "Cart") });
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> Pay (Order orderDetails)
+        {
+            if (ModelState.IsValid)
+            {
+                var userId = User.Identity.GetUserId();
+
+                var newOrder = cartManager.CreateOrder(orderDetails, userId);
+
+                var user = await UserManager.FindByIdAsync(userId);
+                TryUpdateModel(user.UserData);
+                await UserManager.UpdateAsync(user);
+
+                cartManager.EmptyCart();
+
+                return RedirectToAction("ConfirmOrder");
+            }
+            else
+            {
+                return View(orderDetails);
+            }
+        }
+
+        public ActionResult ConfirmOrder()
+        {
+            return View();
+        }
+
 
     }
 }

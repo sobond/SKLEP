@@ -96,7 +96,7 @@ namespace Sklep_MJ.Infrastructure
         {
             var cart = GetCart();
             newOrder.OrderDate = DateTime.Now;
-            //newOrder.userId = userId;
+            newOrder.UserId = userId;
 
             db.Orders.Add(newOrder);
 

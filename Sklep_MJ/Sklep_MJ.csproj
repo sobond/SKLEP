@@ -326,6 +326,10 @@
     <Compile Include="Migrations\201810251205370_Dodanie ASPNetIdentity.Designer.cs">
       <DependentUpon>201810251205370_Dodanie ASPNetIdentity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810251336328_update tabeli zamowienia.cs" />
+    <Compile Include="Migrations\201810251336328_update tabeli zamowienia.Designer.cs">
+      <DependentUpon>201810251336328_update tabeli zamowienia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CartPosition.cs" />
     <Compile Include="Models\Category.cs" />
@@ -376,6 +380,8 @@
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Cart\Pay.cshtml" />
+    <Content Include="Views\Cart\ConfirmOrder.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -402,6 +408,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201810251205370_Dodanie ASPNetIdentity.resx">
       <DependentUpon>201810251205370_Dodanie ASPNetIdentity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810251336328_update tabeli zamowienia.resx">
+      <DependentUpon>201810251336328_update tabeli zamowienia.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

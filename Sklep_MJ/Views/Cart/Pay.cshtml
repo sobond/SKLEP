@@ -1,0 +1,67 @@
+﻿@model Sklep_MJ.Models.Order
+
+@{
+    ViewBag.Title = "Pay";
+    Layout = "~/Views/Shared/_RightSectionLayout.cshtml";
+}
+
+@section SectionTitle{
+    Uzupełnij dane zamówienia
+}
+
+@using (Html.BeginForm("Pay", "Cart"))
+{
+    <table id="checkout-address-table">
+        <tr>
+            <td>@Html.LabelFor(o => o.FirstName, "Imię:")</td>
+            <td>@Html.TextBoxFor(o => o.FirstName)</td>
+            <td>@Html.ValidationMessageFor(o => o.FirstName)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(o => o.SecondName, "Nazwisko:")</td>
+            <td>@Html.TextBoxFor(o => o.SecondName)</td>
+            <td>@Html.ValidationMessageFor(o => o.SecondName)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(o => o.Address, "Adres:")</td>
+            <td>@Html.TextBoxFor(o => o.Address)</td>
+            <td>@Html.ValidationMessageFor(o => o.Address)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(o => o.City, "Miasto:")</td>
+            <td>@Html.TextBoxFor(o => o.City)</td>
+            <td>@Html.ValidationMessageFor(o => o.City)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(o => o.PostCode, "Kod pocztowy:")</td>
+            <td>@Html.TextBoxFor(o => o.PostCode)</td>
+            <td>@Html.ValidationMessageFor(o => o.PostCode)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(o => o.Phone, "Telefon:")</td>
+            <td>@Html.TextBoxFor(o => o.Phone)</td>
+            <td>@Html.ValidationMessageFor(o => o.Phone)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(o => o.Email, "Email:")</td>
+            <td>@Html.TextBoxFor(o => o.Email)</td>
+            <td>@Html.ValidationMessageFor(o => o.Email)</td>
+        </tr>
+        <tr>
+            <td><label for="comment">Uwagi</label></td>
+            <td>
+                <textarea cols="40" rows="3" name="comment">@Model.Comment</textarea>
+            </td>
+        </tr>
+    </table>
+
+
+    @Html.ValidationSummary()
+    <hr style="margin-bottom:50px;" />
+    <div class="section-button-container">
+        <a class="button-link" href="">Wróć</a>
+        <input type="submit" class="button-link" style="" value="Potwierdź" />
+    </div>
+
+}
+

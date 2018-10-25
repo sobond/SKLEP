@@ -12,6 +12,7 @@ namespace Sklep_MJ.Models
         public string SecondName { get; set; }
         public string Address { get; set; }
         public string City { get; set; }
+        public string PostCode { get; set; }
 
         [Phone]
         public string Phone { get; set; }

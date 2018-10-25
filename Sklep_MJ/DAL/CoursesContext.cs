@@ -1,4 +1,5 @@
-﻿using Sklep_MJ.Models;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using Sklep_MJ.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -7,10 +8,15 @@ using System.Web;
 
 namespace Sklep_MJ.DAL
 {
-    public class CoursesContext : DbContext
+    public class CoursesContext : IdentityDbContext<ApplicationUser>
     {
         public CoursesContext() : base("CoursesContext")
         { }
+
+        public static CoursesContext Create()
+        {
+            return new CoursesContext();
+        }
 
         static CoursesContext()
         {

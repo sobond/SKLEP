@@ -290,6 +290,7 @@
     <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="DAL\CoursesContext.cs" />
     <Compile Include="DAL\CoursesInitializer.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
@@ -344,6 +345,7 @@
     <Compile Include="ViewModels\CartRemoveVM.cs" />
     <Compile Include="ViewModels\CartViewModel.cs" />
     <Compile Include="ViewModels\HomeViewModel.cs" />
+    <Compile Include="ViewModels\ManageCredentialsViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -382,6 +384,8 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Cart\Pay.cshtml" />
     <Content Include="Views\Cart\ConfirmOrder.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Shared\_ManageLayout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -392,6 +396,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Chart\" />
+    <Folder Include="Views\Manager\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201810030754447_InitialCreate.resx">

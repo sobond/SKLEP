@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using Sklep_MJ.DAL;
 using Sklep_MJ.Models;
 using Sklep_MJ.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
@@ -15,7 +17,9 @@ namespace Sklep_MJ.Controllers
     [Authorize]
     public class ManageController : Controller
     {
-        
+
+        private CoursesContext db = new CoursesContext();
+
         public enum ManageMessageId
         {
             ChangePasswordSuccess,
@@ -129,6 +133,38 @@ namespace Sklep_MJ.Controllers
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ExternalCookie, DefaultAuthenticationTypes.TwoFactorCookie);
             AuthenticationManager.SignIn(new AuthenticationProperties { IsPersistent = isPersistent }, await user.GenerateUserIdentityAsync(UserManager));
+        }
+
+        public ActionResult OrderList()
+        {
+            bool isAdmin = User.IsInRole("Admin");
+            ViewBag.UserIsAdmin = isAdmin;
+
+            IEnumerable<Order> userOrders;
+
+            if (isAdmin)
+            {
+                userOrders = db.Orders.Include("OrderPositions").OrderByDescending(o => o.OrderDate).ToArray();
+            }
+            else
+            {
+                var userId = User.Identity.GetUserId();
+                userOrders = db.Orders.Where(o => o.UserId == userId).Include("OrderPositions").OrderByDescending(o => o.OrderDate).ToArray();
+            }
+
+            return View(userOrders);
+        }
+
+        [HttpPost]
+        [Authorize(Roles ="Admin")]
+        public OrderStatus ChangeOrderStatus(Order order)
+        {
+            Order orderToModify = db.Orders.Find(order.OrderId);
+            orderToModify.OrderStatus = order.OrderStatus;
+            db.SaveChanges();
+
+            return order.OrderStatus;
+
         }
     }
 }

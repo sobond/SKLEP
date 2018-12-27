@@ -1,4 +1,5 @@
-﻿using Sklep_MJ.DAL;
+﻿using NLog;
+using Sklep_MJ.DAL;
 using Sklep_MJ.Infrastructure;
 using Sklep_MJ.Models;
 using Sklep_MJ.ViewModels;
@@ -14,10 +15,12 @@ namespace Sklep_MJ.Controllers
     {
         // GET: Home
         private CoursesContext db = new CoursesContext();
+        private static Logger logger = LogManager.GetCurrentClassLogger();
 
         public ActionResult Index()
         {
-            throw new Exception("Blad wywolany recznie");
+            logger.Info("Jesteś na stronie głównej");
+            //throw new Exception("Blad wywolany recznie");
             ICacheProvider cache = new DefaultCacheProvider();
 
             List<Category> categories;

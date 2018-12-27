@@ -120,6 +120,15 @@ namespace Sklep_MJ.Controllers
 
                 cartManager.EmptyCart();
 
+                var order = db.Orders.Include("OrderPositions").Include("OrderPositions.Course").SingleOrDefault(o => o.OrderId == newOrder.OrderId);
+                OrderConfirmationEmail email = new OrderConfirmationEmail();
+                email.To = order.Email;
+                email.From = "sobondaniel@gmail.com";
+                email.Price = order.Price;
+                email.OrderId = order.OrderId;
+                email.OrderPositions = order.OrderPositions;
+                email.Send();
+
                 return RedirectToAction("ConfirmOrder");
             }
             else

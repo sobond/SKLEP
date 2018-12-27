@@ -1,0 +1,45 @@
+﻿@model  Sklep_MJ.ViewModels.OrderConfirmationEmail
+Content-Type: text/html; charset=utf-8
+
+<html>
+<body>
+
+    @Html.EmbedImage("~/Content/Images/logo.png")
+
+    <p> Dziękujemy</p>
+    <p>Złożyłeś zamówienie w serwisie Sklep MJ.</p>
+    <p>Zamówione pozycje:</p>
+
+    @{
+        IEnumerable<Sklep_MJ.Models.OrderPosition> orderPositions = Model.OrderPositions;
+
+        for (int i = 0; i < orderPositions.Count(); i++)
+        {
+            <p>
+                @orderPositions.ElementAt(i).Count x @orderPositions.ElementAt(i).course.Title - @orderPositions.ElementAt(i).course.Author
+                - @orderPositions.ElementAt(i).course.Price
+            </p>
+        }
+    }
+    <p>Prosimy o przelanie kwoty @Model.Price zł., tytułem "Zamówienie nr @Model.OrderId" na nasze konto:</p>
+    <p>Sklep MJ</p>
+    <p>ul. Testowa 1</p>
+    <p>22-140 Testy</p>
+    <p>PKO BP 0000 1111 2222 3333 4444 5555 6666</p>
+
+    <p>Zaraz po otrzymaniu środków uzyskasz pełny dostęp do kursu</p>
+    <p>Dziękujemy i zapraszamy ponownie!</p>
+    <p>Sklep MJ</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -5,3 +5,8 @@
 2018-12-27 16:15:36.8755|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
 2018-12-27 16:16:46.4905|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
 2018-12-27 16:19:53.0046|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2018-12-27 19:43:30.7594|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2018-12-27 19:50:03.6868|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2018-12-27 20:12:17.8349|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2018-12-27 20:15:42.9505|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2018-12-27 20:21:30.2174|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej

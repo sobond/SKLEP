@@ -1,0 +1,168 @@
+﻿<error errorId="1107452d-d52b-4aa1-9a6b-e8e597af4da8" host="DESKTOP-RT7LO0S" type="System.Exception" message="Blad dodany recznie" source="Sklep_MJ" detail="System.Exception: Blad dodany recznie&#xD;&#xA;   w Sklep_MJ.Controllers.HomeController.Index() w C:\Users\SOBON\source\repos\Sklep_MJ\Sklep_MJ\Controllers\HomeController.cs:wiersz 20&#xD;&#xA;   w lambda_method(Closure , ControllerBase , Object[] )&#xD;&#xA;   w System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)&#xD;&#xA;   w System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)&#xD;&#xA;   w System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)&#xD;&#xA;   w System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c.&lt;BeginInvokeSynchronousActionMethod&gt;b__9_0(IAsyncResult asyncResult, ActionInvocation innerInvokeState)&#xD;&#xA;   w System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   w System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()&#xD;&#xA;   w System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)&#xD;&#xA;   w System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__11_0()&#xD;&#xA;   w System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.&lt;&gt;c__DisplayClass11_1.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__2()&#xD;&#xA;   w System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass7_0.&lt;BeginInvokeActionMethodWithFilters&gt;b__1(IAsyncResult asyncResult)&#xD;&#xA;   w System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   w System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()&#xD;&#xA;   w System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)&#xD;&#xA;   w System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass3_6.&lt;BeginInvokeAction&gt;b__3()&#xD;&#xA;   w System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass3_1.&lt;BeginInvokeAction&gt;b__5(IAsyncResult asyncResult)&#xD;&#xA;   w System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   w System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()&#xD;&#xA;   w System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)&#xD;&#xA;   w System.Web.Mvc.Controller.&lt;&gt;c.&lt;BeginExecuteCore&gt;b__152_1(IAsyncResult asyncResult, ExecuteCoreState innerState)&#xD;&#xA;   w System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   w System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()&#xD;&#xA;   w System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)&#xD;&#xA;   w System.Web.Mvc.Controller.&lt;&gt;c.&lt;BeginExecute&gt;b__151_2(IAsyncResult asyncResult, Controller controller)&#xD;&#xA;   w System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   w System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()&#xD;&#xA;   w System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)&#xD;&#xA;   w System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)&#xD;&#xA;   w System.Web.Mvc.MvcHandler.&lt;&gt;c.&lt;BeginProcessRequest&gt;b__20_1(IAsyncResult asyncResult, ProcessRequestState innerState)&#xD;&#xA;   w System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   w System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()&#xD;&#xA;   w System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)&#xD;&#xA;   w System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)&#xD;&#xA;   w System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   w System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)&#xD;&#xA;   w System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" user="admin@sklep.pl" time="2018-12-27T13:29:24.3781715Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate, br&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:pl-PL,pl;q=0.9,en-US;q=0.8,en;q=0.7&#xD;&#xA;HTTP_COOKIE:ASP.NET_SessionId=fknrnof4wfpe41hd4gujcrnb; __RequestVerificationToken=EfrqEYLpuipAHcSv_pjXi5HIKw_agqEzZ9fNLUNxgJCdzdNh-cDt10kfkrzj3LKPj7fHrgpa4IBulQ_jhEjaCMm5ztJsRq5fbHW3yYPB3lw1; .AspNet.ApplicationCookie=CC_0ItMrcEACXUge_dEvUXJBVvRxOyuBahPWlJp-QLqSBxOqrVBl0LqFiEwC384Iw-WPpKaCsqQbfkkmVM9beSf7YCfqX1BQ7R8a-f6H4Tr49qbb0wa7_gCAEB7qLKavTJzmbl0X4gqiutLmwMQuN1J9-FlJJr5uK_MjY6OYpg_myH64Zn_vHjSNh-oya20CkKSNMs1IOERuo_QwCB9O_mDQ32-QaQKnU1IqydcorkBEUx5D6sgJAiL9iX0QAfZx7UTWi2VNqPXvT_fykdmknxrUKIC81u-zIqAnxnG5H-Sxpq_T8eja-yxvz6PaCotpG8AzdDSF4e1oUepyp45zVIpcHubmbkX8CgC6e6uE8gMJ8si23j30Ky2_7emFsD1TZDJaGbObKVMzhU1ZP6vBYR_dieGH9Iwg_BohV060jYAjNahuiJi4cG7s_od8zm5kUUxPg_NA8zKtEYevGm48vmwDOSG5MwrmtMeWF-RkK76i0BAhOqLNNfNV3o-vrwcHi0csgCluI415z6vjgbIvAAaEXG6oN7_eEKP9jG2LeZU&#xD;&#xA;HTTP_HOST:localhost:54516&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36&#xD;&#xA;HTTP_UPGRADE_INSECURE_REQUESTS:1&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate, br&#xD;&#xA;Accept-Language: pl-PL,pl;q=0.9,en-US;q=0.8,en;q=0.7&#xD;&#xA;Cookie: ASP.NET_SessionId=fknrnof4wfpe41hd4gujcrnb; __RequestVerificationToken=EfrqEYLpuipAHcSv_pjXi5HIKw_agqEzZ9fNLUNxgJCdzdNh-cDt10kfkrzj3LKPj7fHrgpa4IBulQ_jhEjaCMm5ztJsRq5fbHW3yYPB3lw1; .AspNet.ApplicationCookie=CC_0ItMrcEACXUge_dEvUXJBVvRxOyuBahPWlJp-QLqSBxOqrVBl0LqFiEwC384Iw-WPpKaCsqQbfkkmVM9beSf7YCfqX1BQ7R8a-f6H4Tr49qbb0wa7_gCAEB7qLKavTJzmbl0X4gqiutLmwMQuN1J9-FlJJr5uK_MjY6OYpg_myH64Zn_vHjSNh-oya20CkKSNMs1IOERuo_QwCB9O_mDQ32-QaQKnU1IqydcorkBEUx5D6sgJAiL9iX0QAfZx7UTWi2VNqPXvT_fykdmknxrUKIC81u-zIqAnxnG5H-Sxpq_T8eja-yxvz6PaCotpG8AzdDSF4e1oUepyp45zVIpcHubmbkX8CgC6e6uE8gMJ8si23j30Ky2_7emFsD1TZDJaGbObKVMzhU1ZP6vBYR_dieGH9Iwg_BohV060jYAjNahuiJi4cG7s_od8zm5kUUxPg_NA8zKtEYevGm48vmwDOSG5MwrmtMeWF-RkK76i0BAhOqLNNfNV3o-vrwcHi0csgCluI415z6vjgbIvAAaEXG6oN7_eEKP9jG2LeZU&#xD;&#xA;Host: localhost:54516&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36&#xD;&#xA;Upgrade-Insecure-Requests: 1&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/2/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\Users\SOBON\source\repos\Sklep_MJ\Sklep_MJ\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="ApplicationCookie" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="admin@sklep.pl" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="admin@sklep.pl" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="2" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/2" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\Users\SOBON\source\repos\Sklep_MJ\Sklep_MJ" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="49214" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="54516" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate, br" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="pl-PL,pl;q=0.9,en-US;q=0.8,en;q=0.7" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="ASP.NET_SessionId=fknrnof4wfpe41hd4gujcrnb; __RequestVerificationToken=EfrqEYLpuipAHcSv_pjXi5HIKw_agqEzZ9fNLUNxgJCdzdNh-cDt10kfkrzj3LKPj7fHrgpa4IBulQ_jhEjaCMm5ztJsRq5fbHW3yYPB3lw1; .AspNet.ApplicationCookie=CC_0ItMrcEACXUge_dEvUXJBVvRxOyuBahPWlJp-QLqSBxOqrVBl0LqFiEwC384Iw-WPpKaCsqQbfkkmVM9beSf7YCfqX1BQ7R8a-f6H4Tr49qbb0wa7_gCAEB7qLKavTJzmbl0X4gqiutLmwMQuN1J9-FlJJr5uK_MjY6OYpg_myH64Zn_vHjSNh-oya20CkKSNMs1IOERuo_QwCB9O_mDQ32-QaQKnU1IqydcorkBEUx5D6sgJAiL9iX0QAfZx7UTWi2VNqPXvT_fykdmknxrUKIC81u-zIqAnxnG5H-Sxpq_T8eja-yxvz6PaCotpG8AzdDSF4e1oUepyp45zVIpcHubmbkX8CgC6e6uE8gMJ8si23j30Ky2_7emFsD1TZDJaGbObKVMzhU1ZP6vBYR_dieGH9Iwg_BohV060jYAjNahuiJi4cG7s_od8zm5kUUxPg_NA8zKtEYevGm48vmwDOSG5MwrmtMeWF-RkK76i0BAhOqLNNfNV3o-vrwcHi0csgCluI415z6vjgbIvAAaEXG6oN7_eEKP9jG2LeZU" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:54516" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36" />
+    </item>
+    <item name="HTTP_UPGRADE_INSECURE_REQUESTS">
+      <value string="1" />
+    </item>
+  </serverVariables>
+  <cookies>
+    <item name="ASP.NET_SessionId">
+      <value string="fknrnof4wfpe41hd4gujcrnb" />
+    </item>
+    <item name="__RequestVerificationToken">
+      <value string="EfrqEYLpuipAHcSv_pjXi5HIKw_agqEzZ9fNLUNxgJCdzdNh-cDt10kfkrzj3LKPj7fHrgpa4IBulQ_jhEjaCMm5ztJsRq5fbHW3yYPB3lw1" />
+    </item>
+    <item name=".AspNet.ApplicationCookie">
+      <value string="CC_0ItMrcEACXUge_dEvUXJBVvRxOyuBahPWlJp-QLqSBxOqrVBl0LqFiEwC384Iw-WPpKaCsqQbfkkmVM9beSf7YCfqX1BQ7R8a-f6H4Tr49qbb0wa7_gCAEB7qLKavTJzmbl0X4gqiutLmwMQuN1J9-FlJJr5uK_MjY6OYpg_myH64Zn_vHjSNh-oya20CkKSNMs1IOERuo_QwCB9O_mDQ32-QaQKnU1IqydcorkBEUx5D6sgJAiL9iX0QAfZx7UTWi2VNqPXvT_fykdmknxrUKIC81u-zIqAnxnG5H-Sxpq_T8eja-yxvz6PaCotpG8AzdDSF4e1oUepyp45zVIpcHubmbkX8CgC6e6uE8gMJ8si23j30Ky2_7emFsD1TZDJaGbObKVMzhU1ZP6vBYR_dieGH9Iwg_BohV060jYAjNahuiJi4cG7s_od8zm5kUUxPg_NA8zKtEYevGm48vmwDOSG5MwrmtMeWF-RkK76i0BAhOqLNNfNV3o-vrwcHi0csgCluI415z6vjgbIvAAaEXG6oN7_eEKP9jG2LeZU" />
+    </item>
+  </cookies>
+</error>

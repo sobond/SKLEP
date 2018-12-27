@@ -17,6 +17,7 @@ namespace Sklep_MJ.Controllers
 
         public ActionResult Index()
         {
+            throw new Exception("Blad wywolany recznie");
             ICacheProvider cache = new DefaultCacheProvider();
 
             List<Category> categories;

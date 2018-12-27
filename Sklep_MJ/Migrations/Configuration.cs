@@ -16,7 +16,8 @@ namespace Sklep_MJ.Migrations
 
         protected override void Seed(Sklep_MJ.DAL.CoursesContext context)
         {
-            CoursesInitializer.SeedCoursesData(context);
+            //CoursesInitializer.SeedCoursesData(context);
+            CoursesInitializer.SeedUsers(context);
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 

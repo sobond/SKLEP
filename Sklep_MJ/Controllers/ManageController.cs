@@ -2,11 +2,13 @@
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Sklep_MJ.DAL;
+using Sklep_MJ.Infrastructure;
 using Sklep_MJ.Models;
 using Sklep_MJ.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
@@ -77,7 +79,7 @@ namespace Sklep_MJ.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> ChangeProfile([Bind(Prefix ="UserData")]UserData userData)
+        public async Task<ActionResult> ChangeProfile([Bind(Prefix = "UserData")]UserData userData)
         {
             if (ModelState.IsValid)
             {
@@ -98,7 +100,7 @@ namespace Sklep_MJ.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> ChangePassword([Bind(Prefix ="ChangePasswordViewModel")]ChangePasswordViewModel model)
+        public async Task<ActionResult> ChangePassword([Bind(Prefix = "ChangePasswordViewModel")]ChangePasswordViewModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -156,7 +158,7 @@ namespace Sklep_MJ.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles ="Admin")]
+        [Authorize(Roles = "Admin")]
         public OrderStatus ChangeOrderStatus(Order order)
         {
             Order orderToModify = db.Orders.Find(order.OrderId);
@@ -165,6 +167,101 @@ namespace Sklep_MJ.Controllers
 
             return order.OrderStatus;
 
+        }
+
+        [Authorize(Roles = "Admin")]
+        public ActionResult AddCourse(int? id, bool? confirmation)
+        {
+            Course course;
+            if (id.HasValue)
+            {
+                ViewBag.EditMode = true;
+                course = db.Courses.Find(id);
+            }
+            else
+            {
+                ViewBag.EditMode = false;
+                course = new Course();
+            }
+
+            var result = new EditCourseViewModel();
+            result.Categories = db.Categories.ToList();
+            result.Course = course;
+            result.Confirmation = confirmation;
+
+            return View(result);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public ActionResult AddCourse(EditCourseViewModel model, HttpPostedFileBase file)
+        {
+            if (model.Course.CourseId > 0)
+            {
+                //modyfikacja kursu
+                db.Entry(model.Course).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("AddCourse", new { confirmation = true });
+            }
+            else
+            {
+
+                if (file != null && file.ContentLength > 0)
+                {
+                    if (ModelState.IsValid)
+                    {
+                        //generowanie pliku
+                        var fileExt = Path.GetExtension(file.FileName);
+                        var fileName = Guid.NewGuid() + fileExt;
+
+                        var path = Path.Combine(Server.MapPath(AppConfig.CoursesIconsFolder), fileName);
+                        file.SaveAs(path);
+
+                        model.Course.FileIcon = fileName;
+                        model.Course.DateAdd = DateTime.Now;
+
+                        db.Entry(model.Course).State = EntityState.Added;
+                        db.SaveChanges();
+
+                        return RedirectToAction("AddCourse", new { confirmation = true });
+                    }
+                    else
+                    {
+                        var categories = db.Categories.ToList();
+                        model.Categories = categories;
+
+                        return View(model);
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Brak pliku");
+                    var categories = db.Categories.ToList();
+                    model.Categories = categories;
+
+                    return View(model);
+                }
+            }
+        }
+
+        [Authorize(Roles = "Admin")]
+        public ActionResult HideCourse(int id)
+        {
+            var course = db.Courses.Find(id);
+            course.Hidden = true;
+            db.SaveChanges();
+
+            return RedirectToAction("AddCourse", new { confirmation = true });
+        }
+
+        [Authorize(Roles = "Admin")]
+        public ActionResult ShowCourse(int id)
+        {
+            var course = db.Courses.Find(id);
+            course.Hidden = false;
+            db.SaveChanges();
+
+            return RedirectToAction("AddCourse", new { confirmation = true });
         }
     }
 }

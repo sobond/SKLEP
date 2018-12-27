@@ -19,6 +19,12 @@
             <a class="manageLink" href="@Url.Action("OrderList","Manage")">
                 Lista zamówień
             </a>
+            @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+            {
+                <a class="manageLink" href="@Url.Action("AddCourse","Manage")">
+                    Dodaj kurs
+                </a>
+            }
             <a class="manageLink" href="@Url.Action("Index","Cart")">
                 KOSZYK (<span id="koszyk-naglowek-ilosc-elementow">@Html.Action("GetCartItemsCount", "Cart")</span>)
                 <span id="cart-header-logo"></span>

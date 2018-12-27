@@ -1,4 +1,6 @@
-﻿using Sklep_MJ.Migrations;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Sklep_MJ.Migrations;
 using Sklep_MJ.Models;
 using System;
 using System.Collections.Generic;
@@ -25,7 +27,7 @@ namespace Sklep_MJ.DAL
                 new Category(){CategoryId=5, Name="css", FileIcon="css.png", Description="opis css"},
                 new Category(){CategoryId=6, Name="xml", FileIcon="xml.png", Description="opis xml"},
                 new Category(){CategoryId=7, Name="c#", FileIcon="c.png", Description="opis c#"}
-                
+
             };
             categories.ForEach(c => context.Categories.AddOrUpdate(c));
             context.SaveChanges();
@@ -41,5 +43,40 @@ namespace Sklep_MJ.DAL
             courses.ForEach(c => context.Courses.AddOrUpdate(c));
             context.SaveChanges();
         }
+
+        public static void SeedUsers(CoursesContext context)
+        {
+            var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
+            var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
+
+            const string name = "admin@sklep.pl";
+            const string password = "Admin.10";
+            const string roleName = "Admin";
+
+            var user = userManager.FindByName(name);
+
+            // uworzenie uzytkownika admin
+            if (user == null)
+            {
+                user = new ApplicationUser { UserName = name, Email = name, UserData = new UserData() };
+                var result = userManager.Create(user, password);
+            }
+
+            // utworzenie roli Admin
+            var role = roleManager.FindByName(roleName);
+            if (role == null)
+            {
+                role = new IdentityRole(roleName);
+                var roleResult = roleManager.Create(role);
+            }
+
+            // dodanie usera admin do roli Admin
+            var rolesForUser = userManager.GetRoles(user.Id);
+            if (!rolesForUser.Contains(role.Name))
+            {
+                var result = userManager.AddToRole(user.Id, role.Name);
+            }
+        }
+
     }
 }

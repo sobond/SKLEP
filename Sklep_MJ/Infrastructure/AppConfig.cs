@@ -10,6 +10,7 @@ namespace Sklep_MJ.Infrastructure
     {
         private static string _categoriesIconsFolder = ConfigurationManager.AppSettings["CategoriesIcons"];
         private static string _coursesIconsFolder = ConfigurationManager.AppSettings["CoursesIcons"];
+        private static string _imagePath = ConfigurationManager.AppSettings["ImagePath"];
 
         public static string CategoriesIconsFolder
         {
@@ -27,5 +28,9 @@ namespace Sklep_MJ.Infrastructure
             }
         }
 
+        public static string ImagePath
+        {
+            get => _imagePath;
+        }
     }
 }

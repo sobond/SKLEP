@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNet.Identity;
+﻿using Hangfire;
+using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Sklep_MJ.DAL;
 using Sklep_MJ.Infrastructure;
@@ -7,6 +8,7 @@ using Sklep_MJ.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -18,9 +20,11 @@ namespace Sklep_MJ.Controllers
         private CartManager cartManager;
         private ISessionManager sessionManager { get; set; }
         private CoursesContext db;
+        private IMailService mailService;
 
-        public CartController()
+        public CartController(IMailService mailService)
         {
+            this.mailService = mailService;
             db = new CoursesContext();
             sessionManager = new SessionManager();
             cartManager = new CartManager(sessionManager, db);
@@ -106,7 +110,7 @@ namespace Sklep_MJ.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Pay (Order orderDetails)
+        public async Task<ActionResult> Pay(Order orderDetails)
         {
             if (ModelState.IsValid)
             {
@@ -120,14 +124,16 @@ namespace Sklep_MJ.Controllers
 
                 cartManager.EmptyCart();
 
-                var order = db.Orders.Include("OrderPositions").Include("OrderPositions.Course").SingleOrDefault(o => o.OrderId == newOrder.OrderId);
-                OrderConfirmationEmail email = new OrderConfirmationEmail();
-                email.To = order.Email;
-                email.From = "sobondaniel@gmail.com";
-                email.Price = order.Price;
-                email.OrderId = order.OrderId;
-                email.OrderPositions = order.OrderPositions;
-                email.Send();
+                mailService.SendConfirmOrderEmail(newOrder);
+
+                //var order = db.Orders.Include("OrderPositions").Include("OrderPositions.course").SingleOrDefault(o => o.OrderId == newOrder.OrderId);
+                //OrderConfirmationEmail email = new OrderConfirmationEmail();
+                //email.To = order.Email;
+                //email.From = "sobondaniel@gmail.com";
+                //email.Price = order.Price;
+                //email.OrderId = order.OrderId;
+                //email.OrderPositions = order.OrderPositions;
+                //email.Send();
 
                 return RedirectToAction("ConfirmOrder");
             }
@@ -135,6 +141,26 @@ namespace Sklep_MJ.Controllers
             {
                 return View(orderDetails);
             }
+        }
+
+        public void Call(string url)
+        {
+            var req = HttpWebRequest.Create(url);
+            req.GetResponseAsync();
+        }
+
+        public ActionResult ConfirmOrderEmail(int orderId)
+        {
+            var order = db.Orders.Include("OrderPositions").Include("OrderPositions.course").SingleOrDefault(o => o.OrderId == orderId);
+            OrderConfirmationEmail email = new OrderConfirmationEmail();
+            email.To = order.Email;
+            email.From = "sobondaniel@gmail.com";
+            email.Price = order.Price;
+            email.OrderId = order.OrderId;
+            email.OrderPositions = order.OrderPositions;
+            email.Send();
+
+            return new HttpStatusCodeResult(HttpStatusCode.OK);
         }
 
         public ActionResult ConfirmOrder()

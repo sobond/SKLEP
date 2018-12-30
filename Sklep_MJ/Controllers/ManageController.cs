@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -21,6 +22,12 @@ namespace Sklep_MJ.Controllers
     {
 
         private CoursesContext db = new CoursesContext();
+        private IMailService mailService;
+
+        public ManageController(IMailService mailService)
+        {
+            this.mailService = mailService;
+        }
 
         public enum ManageMessageId
         {
@@ -165,6 +172,11 @@ namespace Sklep_MJ.Controllers
             orderToModify.OrderStatus = order.OrderStatus;
             db.SaveChanges();
 
+            if (orderToModify.OrderStatus == OrderStatus.Finished)
+            {
+                mailService.SendFinishedOrderEmail(orderToModify);
+            }
+
             return order.OrderStatus;
 
         }
@@ -262,6 +274,42 @@ namespace Sklep_MJ.Controllers
             db.SaveChanges();
 
             return RedirectToAction("AddCourse", new { confirmation = true });
+        }
+
+        [AllowAnonymous]
+        public ActionResult SendConfirmOrderEmail(int orderId, string secondName)
+        {
+            var order = db.Orders.Include("OrderPositions").Include("OrderPositions.course").SingleOrDefault(o => o.OrderId == orderId && o.SecondName == secondName);
+            OrderConfirmationEmail email = new OrderConfirmationEmail();
+
+            if (order == null) return new HttpStatusCodeResult(HttpStatusCode.NotFound);
+
+            email.To = order.Email;
+            email.From = "szczurek922@gmail.com";
+            email.Price = order.Price;
+            email.OrderId = order.OrderId;
+            email.OrderPositions = order.OrderPositions;
+            email.ImagePath = AppConfig.ImagePath;
+            email.Send();
+
+            return new HttpStatusCodeResult(HttpStatusCode.OK);
+        }
+
+        [AllowAnonymous]
+        public ActionResult SendFinishedOrderEmail(int orderId, string secondName)
+        {
+
+            var order = db.Orders.Include("OrderPositions").Include("OrderPositions.course").SingleOrDefault(o => o.OrderId == orderId && o.SecondName == secondName);
+            OrderFinishedEmail email = new OrderFinishedEmail();
+
+            if (order == null) return new HttpStatusCodeResult(HttpStatusCode.NotFound);
+
+            email.To = order.Email;
+            email.From = "szczurek922@gmail.com";
+            email.OrderId = order.OrderId;
+            email.Send();
+
+            return new HttpStatusCodeResult(HttpStatusCode.OK);
         }
     }
 }

@@ -14,21 +14,21 @@ namespace Sklep_MJ
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "StaticPages",
-                url: "pages/{name}.html",
-                defaults: new { controller = "Home", action = "StaticPages" }
-            );
+               name: "CoursesDatails",
+               url: "course-{id}.html",
+               defaults: new { controller = "Courses", action = "Details" }
+           );
 
             routes.MapRoute(
                 name: "CoursesList",
-                url: "Category/{name}",
-                defaults: new { Controller = "Courses", Action = "List" }
+                url: "category/{name}",
+                defaults: new { controller = "Courses", action = "List" }
             );
 
             routes.MapRoute(
-                name: "CoursesDatails",
-                url: "Course-{id}",
-                defaults: new { Controller = "Courses", Action = "Details" }
+                name: "StaticPages",
+                url: "pages/{name}.html",
+                defaults: new { controller = "Home", action = "StaticPages" }
             );
 
             routes.MapRoute(

@@ -4,8 +4,8 @@
             xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0 MvcSiteMapSchema.xsd">
 
   <mvcSiteMapNode title="Home" controller="Home" action="Index">
-    <mvcSiteMapNode title="Kategorie" controller="Courses" action="List" dynamicNodeProvider="Sklep_MJ.Infrastructure.CategoryDynamicNodeProvider, Sklep_MJ">
-      <mvcSiteMapNode title="Kursy" controller="Courses" action="Details" dynamicNodeProvider="Sklep_MJ.Infrastructure.CourseDetailsNodeProvider, Sklep_MJ" />
+    <mvcSiteMapNode title="Category" controller="Courses" action="List" dynamicNodeProvider="Sklep_MJ.Infrastructure.CategoryDynamicNodeProvider, Sklep_MJ">
+      <mvcSiteMapNode title="Course" controller="Courses" action="Details" dynamicNodeProvider="Sklep_MJ.Infrastructure.CourseDetailsNodeProvider, Sklep_MJ" />
     </mvcSiteMapNode>
     <mvcSiteMapNode title="Koszyk" controller="Cart" action="Index">
       <mvcSiteMapNode title="Dane zamówienia" controller="Cart" action="Pay"></mvcSiteMapNode>

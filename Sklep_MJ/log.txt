@@ -852,3 +852,732 @@
 2018-12-31 08:48:57.7661|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Hash' table...
 2018-12-31 08:48:57.8551|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Hash' table.
 2018-12-31 08:48:58.2691|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2018-12-31 09:21:00.7727|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Start installing Hangfire SQL objects...
+2018-12-31 09:21:01.1275|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Hangfire SQL objects installed.
+2018-12-31 09:21:01.2554|INFO|Hangfire.BackgroundJobServer|Starting Hangfire Server
+2018-12-31 09:21:01.3533|INFO|Hangfire.BackgroundJobServer|Using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@sobon_db'
+2018-12-31 09:21:01.4083|INFO|Hangfire.BackgroundJobServer|Using the following options for SQL Server job storage:
+2018-12-31 09:21:01.5592|INFO|Hangfire.BackgroundJobServer|    Queue poll interval: 00:00:15.
+2018-12-31 09:21:01.6112|INFO|Hangfire.BackgroundJobServer|Using the following options for Hangfire Server:
+2018-12-31 09:21:01.6711|INFO|Hangfire.BackgroundJobServer|    Worker count: 20
+2018-12-31 09:21:01.8290|INFO|Hangfire.BackgroundJobServer|    Listening queues: 'default'
+2018-12-31 09:21:01.8790|INFO|Hangfire.BackgroundJobServer|    Shutdown timeout: 00:00:15
+2018-12-31 09:21:01.9320|INFO|Hangfire.BackgroundJobServer|    Schedule polling interval: 00:00:15
+2018-12-31 09:21:02.1540|DEBUG|Hangfire.Server.BackgroundProcessingServer|Background process 'BackgroundProcessingServer' started.
+2018-12-31 09:21:02.3839|DEBUG|Hangfire.Server.ServerHeartbeat|Background process 'ServerHeartbeat' started.
+2018-12-31 09:21:02.3839|DEBUG|Hangfire.Server.ServerWatchdog|Background process 'ServerWatchdog' started.
+2018-12-31 09:21:02.4488|DEBUG|Hangfire.SqlServer.ExpirationManager|Background process 'Hangfire.SqlServer.ExpirationManager' started.
+2018-12-31 09:21:02.4758|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'AggregatedCounter' table...
+2018-12-31 09:21:02.4758|DEBUG|Hangfire.SqlServer.CountersAggregator|Background process 'Hangfire.SqlServer.CountersAggregator' started.
+2018-12-31 09:21:02.5068|DEBUG|Hangfire.Server.Worker|Background process 'Worker #ed929712' started.
+2018-12-31 09:21:02.5298|DEBUG|Hangfire.Server.Worker|Background process 'Worker #be19eae9' started.
+2018-12-31 09:21:02.5068|INFO|Hangfire.Server.ServerWatchdog|3 servers were removed due to timeout
+2018-12-31 09:21:02.5068|DEBUG|Hangfire.SqlServer.CountersAggregator|Aggregating records in 'Counter' table...
+2018-12-31 09:21:02.5508|DEBUG|Hangfire.Server.Worker|Background process 'Worker #7947cad2' started.
+2018-12-31 09:21:02.5968|DEBUG|Hangfire.Server.Worker|Background process 'Worker #79c8f751' started.
+2018-12-31 09:21:02.6467|DEBUG|Hangfire.Server.Worker|Background process 'Worker #5364f100' started.
+2018-12-31 09:21:02.6977|DEBUG|Hangfire.Server.Worker|Background process 'Worker #dd42240b' started.
+2018-12-31 09:21:02.7856|DEBUG|Hangfire.Server.Worker|Background process 'Worker #0579892b' started.
+2018-12-31 09:21:02.8716|TRACE|Hangfire.SqlServer.CountersAggregator|Records from the 'Counter' table aggregated.
+2018-12-31 09:21:02.8876|DEBUG|Hangfire.Server.Worker|Background process 'Worker #0fec4acd' started.
+2018-12-31 09:21:02.8716|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'AggregatedCounter' table.
+2018-12-31 09:21:02.9295|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Job' table...
+2018-12-31 09:21:02.9266|DEBUG|Hangfire.Server.Worker|Background process 'Worker #e4dcb6ac' started.
+2018-12-31 09:21:02.9755|DEBUG|Hangfire.Server.Worker|Background process 'Worker #b946501f' started.
+2018-12-31 09:21:03.0035|DEBUG|Hangfire.Server.Worker|Background process 'Worker #642e875d' started.
+2018-12-31 09:21:03.0665|DEBUG|Hangfire.Server.Worker|Background process 'Worker #6e2215f4' started.
+2018-12-31 09:21:03.1014|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Job' table.
+2018-12-31 09:21:03.1014|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'List' table...
+2018-12-31 09:21:03.1144|DEBUG|Hangfire.Server.Worker|Background process 'Worker #6d6be21b' started.
+2018-12-31 09:21:03.1014|DEBUG|Hangfire.Server.Worker|Background process 'Worker #6973b1bf' started.
+2018-12-31 09:21:03.1144|DEBUG|Hangfire.Server.Worker|Background process 'Worker #a6beb516' started.
+2018-12-31 09:21:03.1754|DEBUG|Hangfire.Server.Worker|Background process 'Worker #6bc0274b' started.
+2018-12-31 09:21:03.2384|DEBUG|Hangfire.Server.Worker|Background process 'Worker #d96cd86c' started.
+2018-12-31 09:21:03.2384|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'List' table.
+2018-12-31 09:21:03.2733|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Set' table...
+2018-12-31 09:21:03.2733|DEBUG|Hangfire.Server.Worker|Background process 'Worker #9d5d0dc7' started.
+2018-12-31 09:21:03.3483|DEBUG|Hangfire.Server.Worker|Background process 'Worker #5cf48d8e' started.
+2018-12-31 09:21:03.3853|DEBUG|Hangfire.Server.Worker|Background process 'Worker #b3cb0855' started.
+2018-12-31 09:21:03.3973|DEBUG|Hangfire.Server.DelayedJobScheduler|Background process 'DelayedJobScheduler' started.
+2018-12-31 09:21:03.4422|DEBUG|Hangfire.Server.RecurringJobScheduler|Background process 'RecurringJobScheduler' started.
+2018-12-31 09:21:03.5032|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Set' table.
+2018-12-31 09:21:03.5382|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Hash' table...
+2018-12-31 09:21:03.6041|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Hash' table.
+2018-12-31 09:21:08.8191|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2018-12-31 09:22:27.1118|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Start installing Hangfire SQL objects...
+2018-12-31 09:22:27.4171|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Hangfire SQL objects installed.
+2018-12-31 09:22:27.5247|INFO|Hangfire.BackgroundJobServer|Starting Hangfire Server
+2018-12-31 09:22:27.5816|INFO|Hangfire.BackgroundJobServer|Using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@sobon_db'
+2018-12-31 09:22:27.6285|INFO|Hangfire.BackgroundJobServer|Using the following options for SQL Server job storage:
+2018-12-31 09:22:27.6754|INFO|Hangfire.BackgroundJobServer|    Queue poll interval: 00:00:15.
+2018-12-31 09:22:27.8187|INFO|Hangfire.BackgroundJobServer|Using the following options for Hangfire Server:
+2018-12-31 09:22:27.8678|INFO|Hangfire.BackgroundJobServer|    Worker count: 20
+2018-12-31 09:22:27.9187|INFO|Hangfire.BackgroundJobServer|    Listening queues: 'default'
+2018-12-31 09:22:28.0446|INFO|Hangfire.BackgroundJobServer|    Shutdown timeout: 00:00:15
+2018-12-31 09:22:28.0917|INFO|Hangfire.BackgroundJobServer|    Schedule polling interval: 00:00:15
+2018-12-31 09:22:28.2166|DEBUG|Hangfire.Server.BackgroundProcessingServer|Background process 'BackgroundProcessingServer' started.
+2018-12-31 09:22:28.3945|DEBUG|Hangfire.Server.ServerHeartbeat|Background process 'ServerHeartbeat' started.
+2018-12-31 09:22:28.4035|DEBUG|Hangfire.Server.ServerWatchdog|Background process 'ServerWatchdog' started.
+2018-12-31 09:22:28.4595|DEBUG|Hangfire.SqlServer.ExpirationManager|Background process 'Hangfire.SqlServer.ExpirationManager' started.
+2018-12-31 09:22:28.4595|DEBUG|Hangfire.SqlServer.CountersAggregator|Background process 'Hangfire.SqlServer.CountersAggregator' started.
+2018-12-31 09:22:28.4894|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'AggregatedCounter' table...
+2018-12-31 09:22:28.5284|DEBUG|Hangfire.Server.Worker|Background process 'Worker #81a8d072' started.
+2018-12-31 09:22:28.4894|DEBUG|Hangfire.Server.Worker|Background process 'Worker #6ca8ac1e' started.
+2018-12-31 09:22:28.5824|DEBUG|Hangfire.Server.Worker|Background process 'Worker #a3a12daf' started.
+2018-12-31 09:22:28.5084|DEBUG|Hangfire.SqlServer.CountersAggregator|Aggregating records in 'Counter' table...
+2018-12-31 09:22:28.6394|DEBUG|Hangfire.Server.Worker|Background process 'Worker #206d972b' started.
+2018-12-31 09:22:28.6623|DEBUG|Hangfire.Server.Worker|Background process 'Worker #26e83821' started.
+2018-12-31 09:22:28.7693|DEBUG|Hangfire.Server.Worker|Background process 'Worker #52b483a7' started.
+2018-12-31 09:22:28.7873|TRACE|Hangfire.SqlServer.CountersAggregator|Records from the 'Counter' table aggregated.
+2018-12-31 09:22:28.8342|DEBUG|Hangfire.Server.Worker|Background process 'Worker #f7ed497a' started.
+2018-12-31 09:22:28.8542|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'AggregatedCounter' table.
+2018-12-31 09:22:28.8712|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Job' table...
+2018-12-31 09:22:28.8922|DEBUG|Hangfire.Server.Worker|Background process 'Worker #805b7f3e' started.
+2018-12-31 09:22:28.9382|DEBUG|Hangfire.Server.Worker|Background process 'Worker #e7f02ca9' started.
+2018-12-31 09:22:29.0372|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Job' table.
+2018-12-31 09:22:29.0522|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'List' table...
+2018-12-31 09:22:29.0372|DEBUG|Hangfire.Server.Worker|Background process 'Worker #6c171b22' started.
+2018-12-31 09:22:29.0372|DEBUG|Hangfire.Server.Worker|Background process 'Worker #9589e565' started.
+2018-12-31 09:22:29.1062|DEBUG|Hangfire.Server.Worker|Background process 'Worker #ee8330a0' started.
+2018-12-31 09:22:29.0802|DEBUG|Hangfire.Server.Worker|Background process 'Worker #b4d55b10' started.
+2018-12-31 09:22:29.1481|DEBUG|Hangfire.Server.Worker|Background process 'Worker #8d5c9ca2' started.
+2018-12-31 09:22:29.1901|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'List' table.
+2018-12-31 09:22:29.2251|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Set' table...
+2018-12-31 09:22:29.2091|DEBUG|Hangfire.Server.Worker|Background process 'Worker #c3c769c9' started.
+2018-12-31 09:22:29.2251|DEBUG|Hangfire.Server.Worker|Background process 'Worker #877a96b2' started.
+2018-12-31 09:22:29.2810|DEBUG|Hangfire.Server.Worker|Background process 'Worker #bd02f89b' started.
+2018-12-31 09:22:29.2810|DEBUG|Hangfire.Server.Worker|Background process 'Worker #56365cce' started.
+2018-12-31 09:22:29.3250|DEBUG|Hangfire.Server.Worker|Background process 'Worker #e072223c' started.
+2018-12-31 09:22:29.3670|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Set' table.
+2018-12-31 09:22:29.3910|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Hash' table...
+2018-12-31 09:22:29.3670|DEBUG|Hangfire.Server.Worker|Background process 'Worker #cfd6b8ee' started.
+2018-12-31 09:22:29.4449|DEBUG|Hangfire.Server.DelayedJobScheduler|Background process 'DelayedJobScheduler' started.
+2018-12-31 09:22:29.4909|DEBUG|Hangfire.Server.RecurringJobScheduler|Background process 'RecurringJobScheduler' started.
+2018-12-31 09:22:29.4909|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Hash' table.
+2018-12-31 09:22:30.0316|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2018-12-31 09:24:00.1578|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2018-12-31 09:27:31.9228|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Start installing Hangfire SQL objects...
+2018-12-31 09:27:32.2215|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Hangfire SQL objects installed.
+2018-12-31 09:27:32.3225|INFO|Hangfire.BackgroundJobServer|Starting Hangfire Server
+2018-12-31 09:27:32.3839|INFO|Hangfire.BackgroundJobServer|Using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@sobon_db'
+2018-12-31 09:27:32.4293|INFO|Hangfire.BackgroundJobServer|Using the following options for SQL Server job storage:
+2018-12-31 09:27:32.5552|INFO|Hangfire.BackgroundJobServer|    Queue poll interval: 00:00:15.
+2018-12-31 09:27:32.6815|INFO|Hangfire.BackgroundJobServer|Using the following options for Hangfire Server:
+2018-12-31 09:27:32.7425|INFO|Hangfire.BackgroundJobServer|    Worker count: 20
+2018-12-31 09:27:32.7914|INFO|Hangfire.BackgroundJobServer|    Listening queues: 'default'
+2018-12-31 09:27:32.9154|INFO|Hangfire.BackgroundJobServer|    Shutdown timeout: 00:00:15
+2018-12-31 09:27:33.0295|INFO|Hangfire.BackgroundJobServer|    Schedule polling interval: 00:00:15
+2018-12-31 09:27:33.1754|DEBUG|Hangfire.Server.BackgroundProcessingServer|Background process 'BackgroundProcessingServer' started.
+2018-12-31 09:27:33.4332|DEBUG|Hangfire.Server.ServerHeartbeat|Background process 'ServerHeartbeat' started.
+2018-12-31 09:27:33.4332|DEBUG|Hangfire.Server.ServerWatchdog|Background process 'ServerWatchdog' started.
+2018-12-31 09:27:33.4752|DEBUG|Hangfire.SqlServer.ExpirationManager|Background process 'Hangfire.SqlServer.ExpirationManager' started.
+2018-12-31 09:27:33.5092|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'AggregatedCounter' table...
+2018-12-31 09:27:33.5391|INFO|Hangfire.Server.ServerWatchdog|1 servers were removed due to timeout
+2018-12-31 09:27:33.5391|DEBUG|Hangfire.SqlServer.CountersAggregator|Background process 'Hangfire.SqlServer.CountersAggregator' started.
+2018-12-31 09:27:33.5721|DEBUG|Hangfire.SqlServer.CountersAggregator|Aggregating records in 'Counter' table...
+2018-12-31 09:27:33.5721|DEBUG|Hangfire.Server.Worker|Background process 'Worker #b54930df' started.
+2018-12-31 09:27:33.5581|DEBUG|Hangfire.Server.Worker|Background process 'Worker #12708835' started.
+2018-12-31 09:27:33.6101|DEBUG|Hangfire.Server.Worker|Background process 'Worker #89a3e09b' started.
+2018-12-31 09:27:33.6621|DEBUG|Hangfire.Server.Worker|Background process 'Worker #77eb14f5' started.
+2018-12-31 09:27:33.6621|DEBUG|Hangfire.Server.Worker|Background process 'Worker #f8f53d4f' started.
+2018-12-31 09:27:33.7350|DEBUG|Hangfire.Server.Worker|Background process 'Worker #b600e956' started.
+2018-12-31 09:27:33.8020|TRACE|Hangfire.SqlServer.CountersAggregator|Records from the 'Counter' table aggregated.
+2018-12-31 09:27:33.8589|DEBUG|Hangfire.Server.Worker|Background process 'Worker #2476711f' started.
+2018-12-31 09:27:33.8280|DEBUG|Hangfire.Server.Worker|Background process 'Worker #094f99a8' started.
+2018-12-31 09:27:33.8849|DEBUG|Hangfire.Server.Worker|Background process 'Worker #abddc69b' started.
+2018-12-31 09:27:33.8280|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'AggregatedCounter' table.
+2018-12-31 09:27:33.9189|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Job' table...
+2018-12-31 09:27:33.9189|DEBUG|Hangfire.Server.Worker|Background process 'Worker #df633f30' started.
+2018-12-31 09:27:34.0039|DEBUG|Hangfire.Server.Worker|Background process 'Worker #db1d59ea' started.
+2018-12-31 09:27:34.0398|DEBUG|Hangfire.Server.Worker|Background process 'Worker #bef4748d' started.
+2018-12-31 09:27:34.1082|DEBUG|Hangfire.Server.Worker|Background process 'Worker #8a169bcd' started.
+2018-12-31 09:27:34.1291|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Job' table.
+2018-12-31 09:27:34.1471|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'List' table...
+2018-12-31 09:27:34.1471|DEBUG|Hangfire.Server.Worker|Background process 'Worker #c44dd774' started.
+2018-12-31 09:27:34.1891|DEBUG|Hangfire.Server.Worker|Background process 'Worker #92830ba9' started.
+2018-12-31 09:27:34.2651|DEBUG|Hangfire.Server.Worker|Background process 'Worker #24c7d2b6' started.
+2018-12-31 09:27:34.3220|DEBUG|Hangfire.Server.Worker|Background process 'Worker #5b5ba74d' started.
+2018-12-31 09:27:34.3400|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'List' table.
+2018-12-31 09:27:34.3540|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Set' table...
+2018-12-31 09:27:34.3690|DEBUG|Hangfire.Server.Worker|Background process 'Worker #75aaa063' started.
+2018-12-31 09:27:34.4310|DEBUG|Hangfire.Server.Worker|Background process 'Worker #791fa879' started.
+2018-12-31 09:27:34.4709|DEBUG|Hangfire.Server.Worker|Background process 'Worker #83feff7d' started.
+2018-12-31 09:27:34.5179|DEBUG|Hangfire.Server.DelayedJobScheduler|Background process 'DelayedJobScheduler' started.
+2018-12-31 09:27:34.5419|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Set' table.
+2018-12-31 09:27:34.5639|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Hash' table...
+2018-12-31 09:27:34.5639|DEBUG|Hangfire.Server.RecurringJobScheduler|Background process 'RecurringJobScheduler' started.
+2018-12-31 09:27:34.6848|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Hash' table.
+2018-12-31 09:27:35.0876|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2018-12-31 09:28:47.5122|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Start installing Hangfire SQL objects...
+2018-12-31 09:28:47.7973|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Hangfire SQL objects installed.
+2018-12-31 09:28:47.8992|INFO|Hangfire.BackgroundJobServer|Starting Hangfire Server
+2018-12-31 09:28:47.9508|INFO|Hangfire.BackgroundJobServer|Using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@sobon_db'
+2018-12-31 09:28:47.9988|INFO|Hangfire.BackgroundJobServer|Using the following options for SQL Server job storage:
+2018-12-31 09:28:48.1391|INFO|Hangfire.BackgroundJobServer|    Queue poll interval: 00:00:15.
+2018-12-31 09:28:48.2010|INFO|Hangfire.BackgroundJobServer|Using the following options for Hangfire Server:
+2018-12-31 09:28:48.2507|INFO|Hangfire.BackgroundJobServer|    Worker count: 20
+2018-12-31 09:28:48.4425|INFO|Hangfire.BackgroundJobServer|    Listening queues: 'default'
+2018-12-31 09:28:48.4865|INFO|Hangfire.BackgroundJobServer|    Shutdown timeout: 00:00:15
+2018-12-31 09:28:48.5414|INFO|Hangfire.BackgroundJobServer|    Schedule polling interval: 00:00:15
+2018-12-31 09:28:48.7148|DEBUG|Hangfire.Server.BackgroundProcessingServer|Background process 'BackgroundProcessingServer' started.
+2018-12-31 09:28:48.9557|DEBUG|Hangfire.Server.ServerHeartbeat|Background process 'ServerHeartbeat' started.
+2018-12-31 09:28:48.9857|DEBUG|Hangfire.Server.ServerWatchdog|Background process 'ServerWatchdog' started.
+2018-12-31 09:28:49.0246|DEBUG|Hangfire.SqlServer.ExpirationManager|Background process 'Hangfire.SqlServer.ExpirationManager' started.
+2018-12-31 09:28:49.0416|DEBUG|Hangfire.SqlServer.CountersAggregator|Background process 'Hangfire.SqlServer.CountersAggregator' started.
+2018-12-31 09:28:49.0416|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'AggregatedCounter' table...
+2018-12-31 09:28:49.1016|DEBUG|Hangfire.Server.Worker|Background process 'Worker #5819ae23' started.
+2018-12-31 09:28:49.1016|DEBUG|Hangfire.Server.Worker|Background process 'Worker #2e7cb8d2' started.
+2018-12-31 09:28:49.0936|DEBUG|Hangfire.SqlServer.CountersAggregator|Aggregating records in 'Counter' table...
+2018-12-31 09:28:49.1606|DEBUG|Hangfire.Server.Worker|Background process 'Worker #1e8f9afa' started.
+2018-12-31 09:28:49.1855|DEBUG|Hangfire.Server.Worker|Background process 'Worker #595bb7e1' started.
+2018-12-31 09:28:49.2665|DEBUG|Hangfire.Server.Worker|Background process 'Worker #ad7c0f5c' started.
+2018-12-31 09:28:49.2975|DEBUG|Hangfire.Server.Worker|Background process 'Worker #6bbbe1a1' started.
+2018-12-31 09:28:49.3494|DEBUG|Hangfire.Server.Worker|Background process 'Worker #9044ddbd' started.
+2018-12-31 09:28:49.3494|TRACE|Hangfire.SqlServer.CountersAggregator|Records from the 'Counter' table aggregated.
+2018-12-31 09:28:49.3494|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'AggregatedCounter' table.
+2018-12-31 09:28:49.4054|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Job' table...
+2018-12-31 09:28:49.4464|DEBUG|Hangfire.Server.Worker|Background process 'Worker #4b6de738' started.
+2018-12-31 09:28:49.4464|DEBUG|Hangfire.Server.Worker|Background process 'Worker #f85b8655' started.
+2018-12-31 09:28:49.4984|DEBUG|Hangfire.Server.Worker|Background process 'Worker #874a40b8' started.
+2018-12-31 09:28:49.5233|DEBUG|Hangfire.Server.Worker|Background process 'Worker #dc3ea05f' started.
+2018-12-31 09:28:49.5783|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Job' table.
+2018-12-31 09:28:49.6083|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'List' table...
+2018-12-31 09:28:49.6083|DEBUG|Hangfire.Server.Worker|Background process 'Worker #77ee6940' started.
+2018-12-31 09:28:49.5963|DEBUG|Hangfire.Server.Worker|Background process 'Worker #9f320919' started.
+2018-12-31 09:28:49.6543|DEBUG|Hangfire.Server.Worker|Background process 'Worker #f81a70d0' started.
+2018-12-31 09:28:49.7012|DEBUG|Hangfire.Server.Worker|Background process 'Worker #c6595b5a' started.
+2018-12-31 09:28:49.7642|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'List' table.
+2018-12-31 09:28:49.7712|DEBUG|Hangfire.Server.Worker|Background process 'Worker #4a9e9ffe' started.
+2018-12-31 09:28:49.8023|DEBUG|Hangfire.Server.Worker|Background process 'Worker #cf70a93a' started.
+2018-12-31 09:28:49.7642|DEBUG|Hangfire.Server.Worker|Background process 'Worker #88491f96' started.
+2018-12-31 09:28:49.7933|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Set' table...
+2018-12-31 09:28:49.8573|DEBUG|Hangfire.Server.Worker|Background process 'Worker #152ebf3a' started.
+2018-12-31 09:28:49.9452|DEBUG|Hangfire.Server.Worker|Background process 'Worker #ca642212' started.
+2018-12-31 09:28:49.9452|DEBUG|Hangfire.Server.DelayedJobScheduler|Background process 'DelayedJobScheduler' started.
+2018-12-31 09:28:50.0012|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Set' table.
+2018-12-31 09:28:50.0142|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Hash' table...
+2018-12-31 09:28:50.0142|DEBUG|Hangfire.Server.RecurringJobScheduler|Background process 'RecurringJobScheduler' started.
+2018-12-31 09:28:50.1711|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Hash' table.
+2018-12-31 09:28:50.6168|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2018-12-31 09:41:13.8060|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Start installing Hangfire SQL objects...
+2018-12-31 09:41:14.1888|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Hangfire SQL objects installed.
+2018-12-31 09:41:14.3407|INFO|Hangfire.BackgroundJobServer|Starting Hangfire Server
+2018-12-31 09:41:14.4286|INFO|Hangfire.BackgroundJobServer|Using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@sobon_db'
+2018-12-31 09:41:14.4926|INFO|Hangfire.BackgroundJobServer|Using the following options for SQL Server job storage:
+2018-12-31 09:41:14.6904|INFO|Hangfire.BackgroundJobServer|    Queue poll interval: 00:00:15.
+2018-12-31 09:41:14.7714|INFO|Hangfire.BackgroundJobServer|Using the following options for Hangfire Server:
+2018-12-31 09:41:14.8573|INFO|Hangfire.BackgroundJobServer|    Worker count: 20
+2018-12-31 09:41:14.9163|INFO|Hangfire.BackgroundJobServer|    Listening queues: 'default'
+2018-12-31 09:41:15.0432|INFO|Hangfire.BackgroundJobServer|    Shutdown timeout: 00:00:15
+2018-12-31 09:41:15.1042|INFO|Hangfire.BackgroundJobServer|    Schedule polling interval: 00:00:15
+2018-12-31 09:41:15.3241|DEBUG|Hangfire.Server.BackgroundProcessingServer|Background process 'BackgroundProcessingServer' started.
+2018-12-31 09:41:15.4730|DEBUG|Hangfire.Server.ServerHeartbeat|Background process 'ServerHeartbeat' started.
+2018-12-31 09:41:15.5070|DEBUG|Hangfire.Server.ServerWatchdog|Background process 'ServerWatchdog' started.
+2018-12-31 09:41:15.5070|DEBUG|Hangfire.SqlServer.ExpirationManager|Background process 'Hangfire.SqlServer.ExpirationManager' started.
+2018-12-31 09:41:15.5070|DEBUG|Hangfire.SqlServer.CountersAggregator|Background process 'Hangfire.SqlServer.CountersAggregator' started.
+2018-12-31 09:41:15.5380|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'AggregatedCounter' table...
+2018-12-31 09:41:15.5710|DEBUG|Hangfire.Server.Worker|Background process 'Worker #644ede74' started.
+2018-12-31 09:41:15.6150|DEBUG|Hangfire.Server.Worker|Background process 'Worker #0b248020' started.
+2018-12-31 09:41:15.5710|DEBUG|Hangfire.Server.Worker|Background process 'Worker #2548083c' started.
+2018-12-31 09:41:15.5710|DEBUG|Hangfire.SqlServer.CountersAggregator|Aggregating records in 'Counter' table...
+2018-12-31 09:41:15.6639|DEBUG|Hangfire.Server.Worker|Background process 'Worker #bab324b8' started.
+2018-12-31 09:41:15.6040|INFO|Hangfire.Server.ServerWatchdog|3 servers were removed due to timeout
+2018-12-31 09:41:15.7919|DEBUG|Hangfire.Server.Worker|Background process 'Worker #379e1882' started.
+2018-12-31 09:41:15.7129|DEBUG|Hangfire.Server.Worker|Background process 'Worker #c564c742' started.
+2018-12-31 09:41:15.8678|DEBUG|Hangfire.Server.Worker|Background process 'Worker #8c40d9ba' started.
+2018-12-31 09:41:15.9518|DEBUG|Hangfire.Server.Worker|Background process 'Worker #eb0cdda9' started.
+2018-12-31 09:41:15.9518|TRACE|Hangfire.SqlServer.CountersAggregator|Records from the 'Counter' table aggregated.
+2018-12-31 09:41:15.9707|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'AggregatedCounter' table.
+2018-12-31 09:41:16.0177|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Job' table...
+2018-12-31 09:41:16.0407|DEBUG|Hangfire.Server.Worker|Background process 'Worker #5cd5aa19' started.
+2018-12-31 09:41:16.0887|DEBUG|Hangfire.Server.Worker|Background process 'Worker #a8cdd4d4' started.
+2018-12-31 09:41:16.1077|DEBUG|Hangfire.Server.Worker|Background process 'Worker #031c9a02' started.
+2018-12-31 09:41:16.1526|DEBUG|Hangfire.Server.Worker|Background process 'Worker #999f3ad9' started.
+2018-12-31 09:41:16.1776|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Job' table.
+2018-12-31 09:41:16.1956|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'List' table...
+2018-12-31 09:41:16.1956|DEBUG|Hangfire.Server.Worker|Background process 'Worker #b4f8d9bb' started.
+2018-12-31 09:41:16.2356|DEBUG|Hangfire.Server.Worker|Background process 'Worker #f5c4cdaa' started.
+2018-12-31 09:41:16.2516|DEBUG|Hangfire.Server.Worker|Background process 'Worker #72bbc9bb' started.
+2018-12-31 09:41:16.2956|DEBUG|Hangfire.Server.Worker|Background process 'Worker #0d3c11af' started.
+2018-12-31 09:41:16.3835|DEBUG|Hangfire.Server.Worker|Background process 'Worker #8e67e4b8' started.
+2018-12-31 09:41:16.3835|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'List' table.
+2018-12-31 09:41:16.4345|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Set' table...
+2018-12-31 09:41:16.4425|DEBUG|Hangfire.Server.Worker|Background process 'Worker #15dc09f1' started.
+2018-12-31 09:41:16.5314|DEBUG|Hangfire.Server.Worker|Background process 'Worker #6449a8a7' started.
+2018-12-31 09:41:16.5364|DEBUG|Hangfire.Server.Worker|Background process 'Worker #61de4876' started.
+2018-12-31 09:41:16.5364|DEBUG|Hangfire.Server.DelayedJobScheduler|Background process 'DelayedJobScheduler' started.
+2018-12-31 09:41:16.5794|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Set' table.
+2018-12-31 09:41:16.6074|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Hash' table...
+2018-12-31 09:41:16.6343|DEBUG|Hangfire.Server.RecurringJobScheduler|Background process 'RecurringJobScheduler' started.
+2018-12-31 09:41:16.6943|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Hash' table.
+2018-12-31 09:41:17.1732|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2018-12-31 09:41:42.4066|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2018-12-31 09:51:00.7915|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Start installing Hangfire SQL objects...
+2018-12-31 09:51:01.1693|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Hangfire SQL objects installed.
+2018-12-31 09:51:01.3402|INFO|Hangfire.BackgroundJobServer|Starting Hangfire Server
+2018-12-31 09:51:01.5151|INFO|Hangfire.BackgroundJobServer|Using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@sobon_db'
+2018-12-31 09:51:01.5701|INFO|Hangfire.BackgroundJobServer|Using the following options for SQL Server job storage:
+2018-12-31 09:51:01.6230|INFO|Hangfire.BackgroundJobServer|    Queue poll interval: 00:00:15.
+2018-12-31 09:51:01.6800|INFO|Hangfire.BackgroundJobServer|Using the following options for Hangfire Server:
+2018-12-31 09:51:01.7350|INFO|Hangfire.BackgroundJobServer|    Worker count: 20
+2018-12-31 09:51:01.7869|INFO|Hangfire.BackgroundJobServer|    Listening queues: 'default'
+2018-12-31 09:51:01.8419|INFO|Hangfire.BackgroundJobServer|    Shutdown timeout: 00:00:15
+2018-12-31 09:51:02.0018|INFO|Hangfire.BackgroundJobServer|    Schedule polling interval: 00:00:15
+2018-12-31 09:51:02.1444|DEBUG|Hangfire.Server.BackgroundProcessingServer|Background process 'BackgroundProcessingServer' started.
+2018-12-31 09:51:02.3733|DEBUG|Hangfire.Server.ServerHeartbeat|Background process 'ServerHeartbeat' started.
+2018-12-31 09:51:02.3822|DEBUG|Hangfire.Server.ServerWatchdog|Background process 'ServerWatchdog' started.
+2018-12-31 09:51:02.4112|DEBUG|Hangfire.SqlServer.ExpirationManager|Background process 'Hangfire.SqlServer.ExpirationManager' started.
+2018-12-31 09:51:02.4112|DEBUG|Hangfire.SqlServer.CountersAggregator|Background process 'Hangfire.SqlServer.CountersAggregator' started.
+2018-12-31 09:51:02.4452|DEBUG|Hangfire.Server.Worker|Background process 'Worker #7518ba1d' started.
+2018-12-31 09:51:02.5102|DEBUG|Hangfire.Server.Worker|Background process 'Worker #ee668c67' started.
+2018-12-31 09:51:02.4452|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'AggregatedCounter' table...
+2018-12-31 09:51:02.4952|DEBUG|Hangfire.SqlServer.CountersAggregator|Aggregating records in 'Counter' table...
+2018-12-31 09:51:02.4952|INFO|Hangfire.Server.ServerWatchdog|1 servers were removed due to timeout
+2018-12-31 09:51:02.4952|DEBUG|Hangfire.Server.Worker|Background process 'Worker #006d0f45' started.
+2018-12-31 09:51:02.5392|DEBUG|Hangfire.Server.Worker|Background process 'Worker #9edd744a' started.
+2018-12-31 09:51:02.5812|DEBUG|Hangfire.Server.Worker|Background process 'Worker #87c851c2' started.
+2018-12-31 09:51:02.5932|DEBUG|Hangfire.Server.Worker|Background process 'Worker #c1b64c68' started.
+2018-12-31 09:51:02.6091|DEBUG|Hangfire.Server.Worker|Background process 'Worker #dfcc9d81' started.
+2018-12-31 09:51:02.6571|DEBUG|Hangfire.Server.Worker|Background process 'Worker #9e7f0ed4' started.
+2018-12-31 09:51:02.6301|DEBUG|Hangfire.Server.Worker|Background process 'Worker #cc9c7a43' started.
+2018-12-31 09:51:02.6301|DEBUG|Hangfire.Server.Worker|Background process 'Worker #1065d8d2' started.
+2018-12-31 09:51:02.7151|DEBUG|Hangfire.Server.Worker|Background process 'Worker #8c37a45f' started.
+2018-12-31 09:51:02.6841|DEBUG|Hangfire.Server.Worker|Background process 'Worker #aa90c7c0' started.
+2018-12-31 09:51:02.9499|DEBUG|Hangfire.Server.Worker|Background process 'Worker #6d0ee032' started.
+2018-12-31 09:51:03.0659|TRACE|Hangfire.SqlServer.CountersAggregator|Records from the 'Counter' table aggregated.
+2018-12-31 09:51:03.0679|DEBUG|Hangfire.Server.Worker|Background process 'Worker #761c987e' started.
+2018-12-31 09:51:03.1248|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'AggregatedCounter' table.
+2018-12-31 09:51:03.1358|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Job' table...
+2018-12-31 09:51:03.1358|DEBUG|Hangfire.Server.Worker|Background process 'Worker #ccfcbbda' started.
+2018-12-31 09:51:03.1358|DEBUG|Hangfire.Server.Worker|Background process 'Worker #37d98b00' started.
+2018-12-31 09:51:03.1818|DEBUG|Hangfire.Server.Worker|Background process 'Worker #bde1501c' started.
+2018-12-31 09:51:03.2248|DEBUG|Hangfire.Server.Worker|Background process 'Worker #6b612c69' started.
+2018-12-31 09:51:03.1528|DEBUG|Hangfire.Server.Worker|Background process 'Worker #dd974854' started.
+2018-12-31 09:51:03.3107|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Job' table.
+2018-12-31 09:51:03.3327|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'List' table...
+2018-12-31 09:51:03.3697|DEBUG|Hangfire.Server.Worker|Background process 'Worker #5cf6366e' started.
+2018-12-31 09:51:03.4037|DEBUG|Hangfire.Server.DelayedJobScheduler|Background process 'DelayedJobScheduler' started.
+2018-12-31 09:51:03.4556|DEBUG|Hangfire.Server.RecurringJobScheduler|Background process 'RecurringJobScheduler' started.
+2018-12-31 09:51:03.4976|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'List' table.
+2018-12-31 09:51:03.5236|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Set' table...
+2018-12-31 09:51:03.6225|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Set' table.
+2018-12-31 09:51:03.6375|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Hash' table...
+2018-12-31 09:51:03.6955|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Hash' table.
+2018-12-31 09:51:04.0330|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2018-12-31 09:52:43.4482|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2019-01-06 15:53:27.1178|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Start installing Hangfire SQL objects...
+2019-01-06 15:53:27.6055|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Hangfire SQL objects installed.
+2019-01-06 15:53:27.7085|INFO|Hangfire.BackgroundJobServer|Starting Hangfire Server
+2019-01-06 15:53:27.7684|INFO|Hangfire.BackgroundJobServer|Using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@sobon_db'
+2019-01-06 15:53:27.8244|INFO|Hangfire.BackgroundJobServer|Using the following options for SQL Server job storage:
+2019-01-06 15:53:27.8764|INFO|Hangfire.BackgroundJobServer|    Queue poll interval: 00:00:15.
+2019-01-06 15:53:28.0163|INFO|Hangfire.BackgroundJobServer|Using the following options for Hangfire Server:
+2019-01-06 15:53:28.0673|INFO|Hangfire.BackgroundJobServer|    Worker count: 20
+2019-01-06 15:53:28.1243|INFO|Hangfire.BackgroundJobServer|    Listening queues: 'default'
+2019-01-06 15:53:28.1692|INFO|Hangfire.BackgroundJobServer|    Shutdown timeout: 00:00:15
+2019-01-06 15:53:28.2252|INFO|Hangfire.BackgroundJobServer|    Schedule polling interval: 00:00:15
+2019-01-06 15:53:28.3387|DEBUG|Hangfire.Server.BackgroundProcessingServer|Background process 'BackgroundProcessingServer' started.
+2019-01-06 15:53:28.5766|DEBUG|Hangfire.Server.ServerHeartbeat|Background process 'ServerHeartbeat' started.
+2019-01-06 15:53:28.5766|DEBUG|Hangfire.Server.ServerWatchdog|Background process 'ServerWatchdog' started.
+2019-01-06 15:53:28.5966|DEBUG|Hangfire.SqlServer.ExpirationManager|Background process 'Hangfire.SqlServer.ExpirationManager' started.
+2019-01-06 15:53:28.6496|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'AggregatedCounter' table...
+2019-01-06 15:53:28.6496|DEBUG|Hangfire.SqlServer.CountersAggregator|Background process 'Hangfire.SqlServer.CountersAggregator' started.
+2019-01-06 15:53:28.6895|DEBUG|Hangfire.SqlServer.CountersAggregator|Aggregating records in 'Counter' table...
+2019-01-06 15:53:28.7215|INFO|Hangfire.Server.ServerWatchdog|1 servers were removed due to timeout
+2019-01-06 15:53:28.7265|DEBUG|Hangfire.Server.Worker|Background process 'Worker #4501d8e8' started.
+2019-01-06 15:53:28.7875|DEBUG|Hangfire.Server.Worker|Background process 'Worker #cd1208ca' started.
+2019-01-06 15:53:28.8694|TRACE|Hangfire.SqlServer.CountersAggregator|Records from the 'Counter' table aggregated.
+2019-01-06 15:53:28.9074|DEBUG|Hangfire.Server.Worker|Background process 'Worker #f679536f' started.
+2019-01-06 15:53:28.9704|DEBUG|Hangfire.Server.Worker|Background process 'Worker #8b98f96b' started.
+2019-01-06 15:53:28.9844|DEBUG|Hangfire.Server.Worker|Background process 'Worker #952f36a1' started.
+2019-01-06 15:53:28.9844|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'AggregatedCounter' table.
+2019-01-06 15:53:29.0423|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Job' table...
+2019-01-06 15:53:29.0423|DEBUG|Hangfire.Server.Worker|Background process 'Worker #a8e086ce' started.
+2019-01-06 15:53:29.1053|DEBUG|Hangfire.Server.Worker|Background process 'Worker #3d6c6ccc' started.
+2019-01-06 15:53:29.1253|DEBUG|Hangfire.Server.Worker|Background process 'Worker #ef731195' started.
+2019-01-06 15:53:29.1932|DEBUG|Hangfire.Server.Worker|Background process 'Worker #0efb07f0' started.
+2019-01-06 15:53:29.2342|DEBUG|Hangfire.Server.Worker|Background process 'Worker #2573b882' started.
+2019-01-06 15:53:29.2442|DEBUG|Hangfire.Server.Worker|Background process 'Worker #cc4ce13b' started.
+2019-01-06 15:53:29.2342|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Job' table.
+2019-01-06 15:53:29.3012|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'List' table...
+2019-01-06 15:53:29.2802|DEBUG|Hangfire.Server.Worker|Background process 'Worker #1114b572' started.
+2019-01-06 15:53:29.3012|DEBUG|Hangfire.Server.Worker|Background process 'Worker #bb197202' started.
+2019-01-06 15:53:29.3511|DEBUG|Hangfire.Server.Worker|Background process 'Worker #6e7d7bb7' started.
+2019-01-06 15:53:29.3681|DEBUG|Hangfire.Server.Worker|Background process 'Worker #15a81659' started.
+2019-01-06 15:53:29.3891|DEBUG|Hangfire.Server.Worker|Background process 'Worker #753247d9' started.
+2019-01-06 15:53:29.4011|DEBUG|Hangfire.Server.Worker|Background process 'Worker #33f5cafc' started.
+2019-01-06 15:53:29.4161|DEBUG|Hangfire.Server.Worker|Background process 'Worker #c364219b' started.
+2019-01-06 15:53:29.4491|DEBUG|Hangfire.Server.Worker|Background process 'Worker #09e066d2' started.
+2019-01-06 15:53:29.4491|DEBUG|Hangfire.Server.Worker|Background process 'Worker #87ae2848' started.
+2019-01-06 15:53:29.4911|DEBUG|Hangfire.Server.RecurringJobScheduler|Background process 'RecurringJobScheduler' started.
+2019-01-06 15:53:29.4861|DEBUG|Hangfire.Server.DelayedJobScheduler|Background process 'DelayedJobScheduler' started.
+2019-01-06 15:53:29.7069|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'List' table.
+2019-01-06 15:53:29.7279|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Set' table...
+2019-01-06 15:53:29.7859|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Set' table.
+2019-01-06 15:53:29.7939|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Hash' table...
+2019-01-06 15:53:29.8558|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Hash' table.
+2019-01-06 15:53:35.9136|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2019-01-06 16:46:28.2046|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Start installing Hangfire SQL objects...
+2019-01-06 16:46:28.5694|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Hangfire SQL objects installed.
+2019-01-06 16:46:28.6823|INFO|Hangfire.BackgroundJobServer|Starting Hangfire Server
+2019-01-06 16:46:28.7383|INFO|Hangfire.BackgroundJobServer|Using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@sobon_db'
+2019-01-06 16:46:28.7842|INFO|Hangfire.BackgroundJobServer|Using the following options for SQL Server job storage:
+2019-01-06 16:46:28.9287|INFO|Hangfire.BackgroundJobServer|    Queue poll interval: 00:00:15.
+2019-01-06 16:46:28.9886|INFO|Hangfire.BackgroundJobServer|Using the following options for Hangfire Server:
+2019-01-06 16:46:29.0336|INFO|Hangfire.BackgroundJobServer|    Worker count: 20
+2019-01-06 16:46:29.0856|INFO|Hangfire.BackgroundJobServer|    Listening queues: 'default'
+2019-01-06 16:46:29.2161|INFO|Hangfire.BackgroundJobServer|    Shutdown timeout: 00:00:15
+2019-01-06 16:46:29.2631|INFO|Hangfire.BackgroundJobServer|    Schedule polling interval: 00:00:15
+2019-01-06 16:46:29.4746|DEBUG|Hangfire.Server.BackgroundProcessingServer|Background process 'BackgroundProcessingServer' started.
+2019-01-06 16:46:29.7994|DEBUG|Hangfire.Server.ServerHeartbeat|Background process 'ServerHeartbeat' started.
+2019-01-06 16:46:29.7994|DEBUG|Hangfire.Server.ServerWatchdog|Background process 'ServerWatchdog' started.
+2019-01-06 16:46:29.8304|DEBUG|Hangfire.SqlServer.CountersAggregator|Background process 'Hangfire.SqlServer.CountersAggregator' started.
+2019-01-06 16:46:29.8174|DEBUG|Hangfire.SqlServer.ExpirationManager|Background process 'Hangfire.SqlServer.ExpirationManager' started.
+2019-01-06 16:46:29.8723|DEBUG|Hangfire.Server.Worker|Background process 'Worker #15108fef' started.
+2019-01-06 16:46:29.8404|DEBUG|Hangfire.Server.Worker|Background process 'Worker #18d5ec74' started.
+2019-01-06 16:46:29.9203|DEBUG|Hangfire.Server.Worker|Background process 'Worker #843adf1c' started.
+2019-01-06 16:46:29.8633|DEBUG|Hangfire.SqlServer.CountersAggregator|Aggregating records in 'Counter' table...
+2019-01-06 16:46:29.9893|DEBUG|Hangfire.Server.Worker|Background process 'Worker #d6b47d56' started.
+2019-01-06 16:46:29.9093|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'AggregatedCounter' table...
+2019-01-06 16:46:30.0482|DEBUG|Hangfire.Server.Worker|Background process 'Worker #9fc53cc8' started.
+2019-01-06 16:46:29.9203|INFO|Hangfire.Server.ServerWatchdog|1 servers were removed due to timeout
+2019-01-06 16:46:30.2061|TRACE|Hangfire.SqlServer.CountersAggregator|Records from the 'Counter' table aggregated.
+2019-01-06 16:46:30.2061|DEBUG|Hangfire.Server.Worker|Background process 'Worker #d251ee7e' started.
+2019-01-06 16:46:30.2971|DEBUG|Hangfire.Server.Worker|Background process 'Worker #1280df3b' started.
+2019-01-06 16:46:30.3161|DEBUG|Hangfire.Server.Worker|Background process 'Worker #6f73fa96' started.
+2019-01-06 16:46:30.3481|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'AggregatedCounter' table.
+2019-01-06 16:46:30.3720|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Job' table...
+2019-01-06 16:46:30.3720|DEBUG|Hangfire.Server.Worker|Background process 'Worker #61a15a12' started.
+2019-01-06 16:46:30.4240|DEBUG|Hangfire.Server.Worker|Background process 'Worker #f1f290b9' started.
+2019-01-06 16:46:30.4510|DEBUG|Hangfire.Server.Worker|Background process 'Worker #c5707e67' started.
+2019-01-06 16:46:30.4930|DEBUG|Hangfire.Server.Worker|Background process 'Worker #3b569d21' started.
+2019-01-06 16:46:30.5500|DEBUG|Hangfire.Server.Worker|Background process 'Worker #40b602a5' started.
+2019-01-06 16:46:30.5620|DEBUG|Hangfire.Server.Worker|Background process 'Worker #a2f1d0da' started.
+2019-01-06 16:46:30.5500|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Job' table.
+2019-01-06 16:46:30.6169|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'List' table...
+2019-01-06 16:46:30.6009|DEBUG|Hangfire.Server.Worker|Background process 'Worker #5d20554d' started.
+2019-01-06 16:46:30.6519|DEBUG|Hangfire.Server.Worker|Background process 'Worker #a8185c48' started.
+2019-01-06 16:46:30.6459|DEBUG|Hangfire.Server.Worker|Background process 'Worker #8d095733' started.
+2019-01-06 16:46:30.6709|DEBUG|Hangfire.Server.Worker|Background process 'Worker #a93bed79' started.
+2019-01-06 16:46:30.6949|DEBUG|Hangfire.Server.Worker|Background process 'Worker #b5dad419' started.
+2019-01-06 16:46:30.6949|DEBUG|Hangfire.Server.Worker|Background process 'Worker #68720957' started.
+2019-01-06 16:46:30.7219|DEBUG|Hangfire.Server.DelayedJobScheduler|Background process 'DelayedJobScheduler' started.
+2019-01-06 16:46:30.7388|DEBUG|Hangfire.Server.RecurringJobScheduler|Background process 'RecurringJobScheduler' started.
+2019-01-06 16:46:30.9487|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'List' table.
+2019-01-06 16:46:30.9897|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Set' table...
+2019-01-06 16:46:31.0716|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Set' table.
+2019-01-06 16:46:31.0716|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Hash' table...
+2019-01-06 16:46:31.1326|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Hash' table.
+2019-01-06 16:46:36.2033|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2019-01-06 16:51:39.7044|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Start installing Hangfire SQL objects...
+2019-01-06 16:51:40.0802|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Hangfire SQL objects installed.
+2019-01-06 16:51:40.1921|INFO|Hangfire.BackgroundJobServer|Starting Hangfire Server
+2019-01-06 16:51:40.2469|INFO|Hangfire.BackgroundJobServer|Using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@SKLEP'
+2019-01-06 16:51:40.3019|INFO|Hangfire.BackgroundJobServer|Using the following options for SQL Server job storage:
+2019-01-06 16:51:40.3508|INFO|Hangfire.BackgroundJobServer|    Queue poll interval: 00:00:15.
+2019-01-06 16:51:40.3968|INFO|Hangfire.BackgroundJobServer|Using the following options for Hangfire Server:
+2019-01-06 16:51:40.4428|INFO|Hangfire.BackgroundJobServer|    Worker count: 20
+2019-01-06 16:51:40.4968|INFO|Hangfire.BackgroundJobServer|    Listening queues: 'default'
+2019-01-06 16:51:40.5567|INFO|Hangfire.BackgroundJobServer|    Shutdown timeout: 00:00:15
+2019-01-06 16:51:40.6097|INFO|Hangfire.BackgroundJobServer|    Schedule polling interval: 00:00:15
+2019-01-06 16:51:40.7466|DEBUG|Hangfire.Server.BackgroundProcessingServer|Background process 'BackgroundProcessingServer' started.
+2019-01-06 16:51:40.8945|DEBUG|Hangfire.Server.ServerHeartbeat|Background process 'ServerHeartbeat' started.
+2019-01-06 16:51:40.8995|DEBUG|Hangfire.Server.ServerWatchdog|Background process 'ServerWatchdog' started.
+2019-01-06 16:51:40.9475|DEBUG|Hangfire.SqlServer.ExpirationManager|Background process 'Hangfire.SqlServer.ExpirationManager' started.
+2019-01-06 16:51:40.9595|DEBUG|Hangfire.SqlServer.CountersAggregator|Background process 'Hangfire.SqlServer.CountersAggregator' started.
+2019-01-06 16:51:41.0114|DEBUG|Hangfire.SqlServer.CountersAggregator|Aggregating records in 'Counter' table...
+2019-01-06 16:51:41.0114|DEBUG|Hangfire.Server.Worker|Background process 'Worker #0bc00ced' started.
+2019-01-06 16:51:40.9984|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'AggregatedCounter' table...
+2019-01-06 16:51:41.1324|DEBUG|Hangfire.Server.Worker|Background process 'Worker #66928d70' started.
+2019-01-06 16:51:41.2373|DEBUG|Hangfire.Server.Worker|Background process 'Worker #79dc2449' started.
+2019-01-06 16:51:41.2493|DEBUG|Hangfire.Server.Worker|Background process 'Worker #4b63827a' started.
+2019-01-06 16:51:41.2943|TRACE|Hangfire.SqlServer.CountersAggregator|Records from the 'Counter' table aggregated.
+2019-01-06 16:51:41.3192|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'AggregatedCounter' table.
+2019-01-06 16:51:41.3542|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Job' table...
+2019-01-06 16:51:41.3492|DEBUG|Hangfire.Server.Worker|Background process 'Worker #48c1de7f' started.
+2019-01-06 16:51:41.4442|DEBUG|Hangfire.Server.Worker|Background process 'Worker #3762527b' started.
+2019-01-06 16:51:41.5371|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Job' table.
+2019-01-06 16:51:41.5651|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'List' table...
+2019-01-06 16:51:41.5651|DEBUG|Hangfire.Server.Worker|Background process 'Worker #405589af' started.
+2019-01-06 16:51:41.5371|DEBUG|Hangfire.Server.Worker|Background process 'Worker #81b04f4b' started.
+2019-01-06 16:51:41.6111|DEBUG|Hangfire.Server.Worker|Background process 'Worker #6e38c37f' started.
+2019-01-06 16:51:41.6281|DEBUG|Hangfire.Server.Worker|Background process 'Worker #57e5cea9' started.
+2019-01-06 16:51:41.7226|DEBUG|Hangfire.Server.Worker|Background process 'Worker #5acd1d63' started.
+2019-01-06 16:51:41.7415|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'List' table.
+2019-01-06 16:51:41.7685|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Set' table...
+2019-01-06 16:51:41.7765|DEBUG|Hangfire.Server.Worker|Background process 'Worker #d5c083ce' started.
+2019-01-06 16:51:41.8295|DEBUG|Hangfire.Server.Worker|Background process 'Worker #4c508d40' started.
+2019-01-06 16:51:41.8685|DEBUG|Hangfire.Server.Worker|Background process 'Worker #9a840624' started.
+2019-01-06 16:51:41.8865|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Set' table.
+2019-01-06 16:51:41.9275|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Hash' table...
+2019-01-06 16:51:41.9494|DEBUG|Hangfire.Server.Worker|Background process 'Worker #8c67e610' started.
+2019-01-06 16:51:41.9285|DEBUG|Hangfire.Server.Worker|Background process 'Worker #929765f9' started.
+2019-01-06 16:51:41.9624|DEBUG|Hangfire.Server.Worker|Background process 'Worker #2b80166b' started.
+2019-01-06 16:51:41.9944|DEBUG|Hangfire.Server.Worker|Background process 'Worker #b87a737e' started.
+2019-01-06 16:51:42.0684|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Hash' table.
+2019-01-06 16:51:42.0794|DEBUG|Hangfire.Server.Worker|Background process 'Worker #e6416cec' started.
+2019-01-06 16:51:42.1303|DEBUG|Hangfire.Server.Worker|Background process 'Worker #bd74c11b' started.
+2019-01-06 16:51:42.1553|DEBUG|Hangfire.Server.DelayedJobScheduler|Background process 'DelayedJobScheduler' started.
+2019-01-06 16:51:42.1673|DEBUG|Hangfire.Server.RecurringJobScheduler|Background process 'RecurringJobScheduler' started.
+2019-01-06 16:51:42.8049|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2019-01-06 16:55:02.6824|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Start installing Hangfire SQL objects...
+2019-01-06 16:55:03.1151|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Hangfire SQL objects installed.
+2019-01-06 16:55:03.2251|INFO|Hangfire.BackgroundJobServer|Starting Hangfire Server
+2019-01-06 16:55:03.2790|INFO|Hangfire.BackgroundJobServer|Using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@SKLEP'
+2019-01-06 16:55:03.3380|INFO|Hangfire.BackgroundJobServer|Using the following options for SQL Server job storage:
+2019-01-06 16:55:03.3890|INFO|Hangfire.BackgroundJobServer|    Queue poll interval: 00:00:15.
+2019-01-06 16:55:03.4339|INFO|Hangfire.BackgroundJobServer|Using the following options for Hangfire Server:
+2019-01-06 16:55:03.4819|INFO|Hangfire.BackgroundJobServer|    Worker count: 20
+2019-01-06 16:55:03.5339|INFO|Hangfire.BackgroundJobServer|    Listening queues: 'default'
+2019-01-06 16:55:03.5838|INFO|Hangfire.BackgroundJobServer|    Shutdown timeout: 00:00:15
+2019-01-06 16:55:03.6311|INFO|Hangfire.BackgroundJobServer|    Schedule polling interval: 00:00:15
+2019-01-06 16:55:03.7500|DEBUG|Hangfire.Server.BackgroundProcessingServer|Background process 'BackgroundProcessingServer' started.
+2019-01-06 16:55:03.8679|DEBUG|Hangfire.Server.ServerHeartbeat|Background process 'ServerHeartbeat' started.
+2019-01-06 16:55:03.8819|DEBUG|Hangfire.Server.ServerWatchdog|Background process 'ServerWatchdog' started.
+2019-01-06 16:55:03.8989|DEBUG|Hangfire.SqlServer.CountersAggregator|Background process 'Hangfire.SqlServer.CountersAggregator' started.
+2019-01-06 16:55:03.9159|DEBUG|Hangfire.Server.Worker|Background process 'Worker #363a734d' started.
+2019-01-06 16:55:03.8819|DEBUG|Hangfire.SqlServer.ExpirationManager|Background process 'Hangfire.SqlServer.ExpirationManager' started.
+2019-01-06 16:55:03.9708|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'AggregatedCounter' table...
+2019-01-06 16:55:03.9838|DEBUG|Hangfire.Server.Worker|Background process 'Worker #aa50fbaa' started.
+2019-01-06 16:55:03.9318|DEBUG|Hangfire.SqlServer.CountersAggregator|Aggregating records in 'Counter' table...
+2019-01-06 16:55:03.9548|DEBUG|Hangfire.Server.Worker|Background process 'Worker #d2efbd37' started.
+2019-01-06 16:55:04.0768|DEBUG|Hangfire.Server.Worker|Background process 'Worker #e59b755a' started.
+2019-01-06 16:55:04.1627|DEBUG|Hangfire.Server.Worker|Background process 'Worker #5994443b' started.
+2019-01-06 16:55:04.2706|DEBUG|Hangfire.Server.Worker|Background process 'Worker #77e53deb' started.
+2019-01-06 16:55:04.2996|DEBUG|Hangfire.Server.Worker|Background process 'Worker #a089e961' started.
+2019-01-06 16:55:04.3806|DEBUG|Hangfire.Server.Worker|Background process 'Worker #210897c4' started.
+2019-01-06 16:55:04.3856|TRACE|Hangfire.SqlServer.CountersAggregator|Records from the 'Counter' table aggregated.
+2019-01-06 16:55:04.3856|DEBUG|Hangfire.Server.Worker|Background process 'Worker #d4abc3c8' started.
+2019-01-06 16:55:04.4165|DEBUG|Hangfire.Server.Worker|Background process 'Worker #ab6fcb39' started.
+2019-01-06 16:55:04.3856|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'AggregatedCounter' table.
+2019-01-06 16:55:04.4985|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Job' table...
+2019-01-06 16:55:04.4725|DEBUG|Hangfire.Server.Worker|Background process 'Worker #96a91769' started.
+2019-01-06 16:55:04.5245|DEBUG|Hangfire.Server.Worker|Background process 'Worker #fda0e35a' started.
+2019-01-06 16:55:04.4875|DEBUG|Hangfire.Server.Worker|Background process 'Worker #221e555c' started.
+2019-01-06 16:55:04.5455|DEBUG|Hangfire.Server.Worker|Background process 'Worker #811eb93c' started.
+2019-01-06 16:55:04.5455|DEBUG|Hangfire.Server.Worker|Background process 'Worker #2eeb6cfa' started.
+2019-01-06 16:55:04.6414|DEBUG|Hangfire.Server.Worker|Background process 'Worker #09683445' started.
+2019-01-06 16:55:04.5874|DEBUG|Hangfire.Server.Worker|Background process 'Worker #2207a1de' started.
+2019-01-06 16:55:04.7420|DEBUG|Hangfire.Server.Worker|Background process 'Worker #97ed1177' started.
+2019-01-06 16:55:04.7420|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Job' table.
+2019-01-06 16:55:04.8060|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'List' table...
+2019-01-06 16:55:04.8060|DEBUG|Hangfire.Server.Worker|Background process 'Worker #257457e5' started.
+2019-01-06 16:55:04.8060|DEBUG|Hangfire.Server.Worker|Background process 'Worker #d2ef76d5' started.
+2019-01-06 16:55:04.8569|DEBUG|Hangfire.Server.DelayedJobScheduler|Background process 'DelayedJobScheduler' started.
+2019-01-06 16:55:04.8969|DEBUG|Hangfire.Server.RecurringJobScheduler|Background process 'RecurringJobScheduler' started.
+2019-01-06 16:55:04.9389|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'List' table.
+2019-01-06 16:55:04.9739|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Set' table...
+2019-01-06 16:55:05.0338|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Set' table.
+2019-01-06 16:55:05.0458|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Hash' table...
+2019-01-06 16:55:05.1128|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Hash' table.
+2019-01-06 16:55:05.5885|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2019-01-06 16:59:51.7433|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Start installing Hangfire SQL objects...
+2019-01-06 16:59:51.9862|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Hangfire SQL objects installed.
+2019-01-06 16:59:52.1171|INFO|Hangfire.BackgroundJobServer|Starting Hangfire Server
+2019-01-06 16:59:52.1880|INFO|Hangfire.BackgroundJobServer|Using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@SKLEP'
+2019-01-06 16:59:52.2390|INFO|Hangfire.BackgroundJobServer|Using the following options for SQL Server job storage:
+2019-01-06 16:59:52.2900|INFO|Hangfire.BackgroundJobServer|    Queue poll interval: 00:00:15.
+2019-01-06 16:59:52.3396|INFO|Hangfire.BackgroundJobServer|Using the following options for Hangfire Server:
+2019-01-06 16:59:52.3885|INFO|Hangfire.BackgroundJobServer|    Worker count: 20
+2019-01-06 16:59:52.4345|INFO|Hangfire.BackgroundJobServer|    Listening queues: 'default'
+2019-01-06 16:59:52.4800|INFO|Hangfire.BackgroundJobServer|    Shutdown timeout: 00:00:15
+2019-01-06 16:59:52.5280|INFO|Hangfire.BackgroundJobServer|    Schedule polling interval: 00:00:15
+2019-01-06 16:59:52.6499|DEBUG|Hangfire.Server.BackgroundProcessingServer|Background process 'BackgroundProcessingServer' started.
+2019-01-06 16:59:52.7748|DEBUG|Hangfire.Server.ServerHeartbeat|Background process 'ServerHeartbeat' started.
+2019-01-06 16:59:52.8098|DEBUG|Hangfire.Server.ServerWatchdog|Background process 'ServerWatchdog' started.
+2019-01-06 16:59:52.8098|DEBUG|Hangfire.SqlServer.ExpirationManager|Background process 'Hangfire.SqlServer.ExpirationManager' started.
+2019-01-06 16:59:52.8378|DEBUG|Hangfire.SqlServer.CountersAggregator|Background process 'Hangfire.SqlServer.CountersAggregator' started.
+2019-01-06 16:59:52.8538|DEBUG|Hangfire.Server.Worker|Background process 'Worker #1d3f2dd8' started.
+2019-01-06 16:59:52.8678|DEBUG|Hangfire.Server.Worker|Background process 'Worker #0ad7a581' started.
+2019-01-06 16:59:52.8538|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'AggregatedCounter' table...
+2019-01-06 16:59:52.8678|DEBUG|Hangfire.SqlServer.CountersAggregator|Aggregating records in 'Counter' table...
+2019-01-06 16:59:52.9157|DEBUG|Hangfire.Server.Worker|Background process 'Worker #daff441e' started.
+2019-01-06 16:59:52.9337|DEBUG|Hangfire.Server.Worker|Background process 'Worker #38726964' started.
+2019-01-06 16:59:52.9117|DEBUG|Hangfire.Server.Worker|Background process 'Worker #e2f1ec4d' started.
+2019-01-06 16:59:53.0437|DEBUG|Hangfire.Server.Worker|Background process 'Worker #e02fcd64' started.
+2019-01-06 16:59:53.0437|DEBUG|Hangfire.Server.Worker|Background process 'Worker #18715902' started.
+2019-01-06 16:59:53.1356|TRACE|Hangfire.SqlServer.CountersAggregator|Records from the 'Counter' table aggregated.
+2019-01-06 16:59:53.1356|DEBUG|Hangfire.Server.Worker|Background process 'Worker #3229fb0c' started.
+2019-01-06 16:59:53.2675|DEBUG|Hangfire.Server.Worker|Background process 'Worker #63ae3e2c' started.
+2019-01-06 16:59:53.3125|DEBUG|Hangfire.Server.Worker|Background process 'Worker #8df0eb27' started.
+2019-01-06 16:59:53.3455|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'AggregatedCounter' table.
+2019-01-06 16:59:53.3685|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Job' table...
+2019-01-06 16:59:53.3455|DEBUG|Hangfire.Server.Worker|Background process 'Worker #1699478f' started.
+2019-01-06 16:59:53.3984|DEBUG|Hangfire.Server.Worker|Background process 'Worker #de37c75b' started.
+2019-01-06 16:59:53.3934|DEBUG|Hangfire.Server.Worker|Background process 'Worker #b9dae290' started.
+2019-01-06 16:59:53.4374|DEBUG|Hangfire.Server.Worker|Background process 'Worker #0f716742' started.
+2019-01-06 16:59:53.4954|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Job' table.
+2019-01-06 16:59:53.5354|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'List' table...
+2019-01-06 16:59:53.4954|DEBUG|Hangfire.Server.Worker|Background process 'Worker #7e39e6f9' started.
+2019-01-06 16:59:53.5424|DEBUG|Hangfire.Server.Worker|Background process 'Worker #b56c048c' started.
+2019-01-06 16:59:53.5554|DEBUG|Hangfire.Server.Worker|Background process 'Worker #98bc287c' started.
+2019-01-06 16:59:53.6083|DEBUG|Hangfire.Server.Worker|Background process 'Worker #0246026f' started.
+2019-01-06 16:59:53.6733|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'List' table.
+2019-01-06 16:59:53.6913|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Set' table...
+2019-01-06 16:59:53.6913|DEBUG|Hangfire.Server.Worker|Background process 'Worker #38d272c4' started.
+2019-01-06 16:59:53.7143|DEBUG|Hangfire.Server.Worker|Background process 'Worker #c0775d3f' started.
+2019-01-06 16:59:53.7492|DEBUG|Hangfire.Server.DelayedJobScheduler|Background process 'DelayedJobScheduler' started.
+2019-01-06 16:59:53.7942|DEBUG|Hangfire.Server.RecurringJobScheduler|Background process 'RecurringJobScheduler' started.
+2019-01-06 16:59:53.7942|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Set' table.
+2019-01-06 16:59:53.8252|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Hash' table...
+2019-01-06 16:59:53.9141|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Hash' table.
+2019-01-06 16:59:54.5038|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2019-01-06 17:02:32.5581|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Start installing Hangfire SQL objects...
+2019-01-06 17:02:32.8188|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Hangfire SQL objects installed.
+2019-01-06 17:02:32.9227|INFO|Hangfire.BackgroundJobServer|Starting Hangfire Server
+2019-01-06 17:02:32.9747|INFO|Hangfire.BackgroundJobServer|Using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@SKLEP'
+2019-01-06 17:02:33.0307|INFO|Hangfire.BackgroundJobServer|Using the following options for SQL Server job storage:
+2019-01-06 17:02:33.0866|INFO|Hangfire.BackgroundJobServer|    Queue poll interval: 00:00:15.
+2019-01-06 17:02:33.1456|INFO|Hangfire.BackgroundJobServer|Using the following options for Hangfire Server:
+2019-01-06 17:02:33.2006|INFO|Hangfire.BackgroundJobServer|    Worker count: 20
+2019-01-06 17:02:33.2765|INFO|Hangfire.BackgroundJobServer|    Listening queues: 'default'
+2019-01-06 17:02:33.3495|INFO|Hangfire.BackgroundJobServer|    Shutdown timeout: 00:00:15
+2019-01-06 17:02:33.3934|INFO|Hangfire.BackgroundJobServer|    Schedule polling interval: 00:00:15
+2019-01-06 17:02:33.5174|DEBUG|Hangfire.Server.BackgroundProcessingServer|Background process 'BackgroundProcessingServer' started.
+2019-01-06 17:02:33.6253|DEBUG|Hangfire.Server.ServerHeartbeat|Background process 'ServerHeartbeat' started.
+2019-01-06 17:02:33.6343|DEBUG|Hangfire.Server.ServerWatchdog|Background process 'ServerWatchdog' started.
+2019-01-06 17:02:33.6633|DEBUG|Hangfire.SqlServer.ExpirationManager|Background process 'Hangfire.SqlServer.ExpirationManager' started.
+2019-01-06 17:02:33.6993|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'AggregatedCounter' table...
+2019-01-06 17:02:33.6993|DEBUG|Hangfire.SqlServer.CountersAggregator|Background process 'Hangfire.SqlServer.CountersAggregator' started.
+2019-01-06 17:02:33.7472|DEBUG|Hangfire.SqlServer.CountersAggregator|Aggregating records in 'Counter' table...
+2019-01-06 17:02:33.7283|INFO|Hangfire.Server.ServerWatchdog|1 servers were removed due to timeout
+2019-01-06 17:02:33.7702|DEBUG|Hangfire.Server.Worker|Background process 'Worker #1248dae7' started.
+2019-01-06 17:02:33.7472|DEBUG|Hangfire.Server.Worker|Background process 'Worker #3f021cbe' started.
+2019-01-06 17:02:33.8312|DEBUG|Hangfire.Server.Worker|Background process 'Worker #d6a66ddb' started.
+2019-01-06 17:02:33.8842|TRACE|Hangfire.SqlServer.CountersAggregator|Records from the 'Counter' table aggregated.
+2019-01-06 17:02:33.8842|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'AggregatedCounter' table.
+2019-01-06 17:02:33.9561|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Job' table...
+2019-01-06 17:02:33.8842|DEBUG|Hangfire.Server.Worker|Background process 'Worker #941b4ad5' started.
+2019-01-06 17:02:34.0061|DEBUG|Hangfire.Server.Worker|Background process 'Worker #5c43570c' started.
+2019-01-06 17:02:34.0730|DEBUG|Hangfire.Server.Worker|Background process 'Worker #a3eb6242' started.
+2019-01-06 17:02:34.1890|DEBUG|Hangfire.Server.Worker|Background process 'Worker #31b8e405' started.
+2019-01-06 17:02:34.2299|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Job' table.
+2019-01-06 17:02:34.2459|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'List' table...
+2019-01-06 17:02:34.2609|DEBUG|Hangfire.Server.Worker|Background process 'Worker #5bed67a9' started.
+2019-01-06 17:02:34.2459|DEBUG|Hangfire.Server.Worker|Background process 'Worker #65d9134b' started.
+2019-01-06 17:02:34.3029|DEBUG|Hangfire.Server.Worker|Background process 'Worker #adb1a61c' started.
+2019-01-06 17:02:34.4019|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'List' table.
+2019-01-06 17:02:34.4299|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Set' table...
+2019-01-06 17:02:34.4019|DEBUG|Hangfire.Server.Worker|Background process 'Worker #c935996f' started.
+2019-01-06 17:02:34.4299|DEBUG|Hangfire.Server.Worker|Background process 'Worker #32109c88' started.
+2019-01-06 17:02:34.4299|DEBUG|Hangfire.Server.Worker|Background process 'Worker #f2d53841' started.
+2019-01-06 17:02:34.4639|DEBUG|Hangfire.Server.Worker|Background process 'Worker #4c461b88' started.
+2019-01-06 17:02:34.4479|DEBUG|Hangfire.Server.Worker|Background process 'Worker #1b6efdab' started.
+2019-01-06 17:02:34.5129|DEBUG|Hangfire.Server.Worker|Background process 'Worker #2b01b5ac' started.
+2019-01-06 17:02:34.5419|DEBUG|Hangfire.Server.Worker|Background process 'Worker #6ddd9422' started.
+2019-01-06 17:02:34.5798|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Set' table.
+2019-01-06 17:02:34.6588|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Hash' table...
+2019-01-06 17:02:34.6198|DEBUG|Hangfire.Server.Worker|Background process 'Worker #f9b0c6ff' started.
+2019-01-06 17:02:34.6908|DEBUG|Hangfire.Server.Worker|Background process 'Worker #9d0f656d' started.
+2019-01-06 17:02:34.6638|DEBUG|Hangfire.Server.Worker|Background process 'Worker #f15ad4b5' started.
+2019-01-06 17:02:34.7417|DEBUG|Hangfire.Server.RecurringJobScheduler|Background process 'RecurringJobScheduler' started.
+2019-01-06 17:02:34.7108|DEBUG|Hangfire.Server.DelayedJobScheduler|Background process 'DelayedJobScheduler' started.
+2019-01-06 17:02:34.7687|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Hash' table.
+2019-01-06 17:02:35.4363|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2019-01-06 17:15:55.3110|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Start installing Hangfire SQL objects...
+2019-01-06 17:15:55.6723|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Hangfire SQL objects installed.
+2019-01-06 17:15:55.7763|INFO|Hangfire.BackgroundJobServer|Starting Hangfire Server
+2019-01-06 17:15:55.8481|INFO|Hangfire.BackgroundJobServer|Using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@SKLEP'
+2019-01-06 17:15:55.9010|INFO|Hangfire.BackgroundJobServer|Using the following options for SQL Server job storage:
+2019-01-06 17:15:55.9470|INFO|Hangfire.BackgroundJobServer|    Queue poll interval: 00:00:15.
+2019-01-06 17:15:55.9950|INFO|Hangfire.BackgroundJobServer|Using the following options for Hangfire Server:
+2019-01-06 17:15:56.0419|INFO|Hangfire.BackgroundJobServer|    Worker count: 20
+2019-01-06 17:15:56.0969|INFO|Hangfire.BackgroundJobServer|    Listening queues: 'default'
+2019-01-06 17:15:56.1399|INFO|Hangfire.BackgroundJobServer|    Shutdown timeout: 00:00:15
+2019-01-06 17:15:56.1869|INFO|Hangfire.BackgroundJobServer|    Schedule polling interval: 00:00:15
+2019-01-06 17:15:56.3338|DEBUG|Hangfire.Server.BackgroundProcessingServer|Background process 'BackgroundProcessingServer' started.
+2019-01-06 17:15:56.4927|DEBUG|Hangfire.Server.ServerHeartbeat|Background process 'ServerHeartbeat' started.
+2019-01-06 17:15:56.4927|DEBUG|Hangfire.Server.ServerWatchdog|Background process 'ServerWatchdog' started.
+2019-01-06 17:15:56.5277|DEBUG|Hangfire.SqlServer.ExpirationManager|Background process 'Hangfire.SqlServer.ExpirationManager' started.
+2019-01-06 17:15:56.5786|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'AggregatedCounter' table...
+2019-01-06 17:15:56.5786|DEBUG|Hangfire.SqlServer.CountersAggregator|Background process 'Hangfire.SqlServer.CountersAggregator' started.
+2019-01-06 17:15:56.5986|DEBUG|Hangfire.Server.Worker|Background process 'Worker #d754cf7c' started.
+2019-01-06 17:15:56.6146|DEBUG|Hangfire.SqlServer.CountersAggregator|Aggregating records in 'Counter' table...
+2019-01-06 17:15:56.6756|DEBUG|Hangfire.Server.Worker|Background process 'Worker #90729400' started.
+2019-01-06 17:15:56.8385|DEBUG|Hangfire.Server.Worker|Background process 'Worker #2ab1d22f' started.
+2019-01-06 17:15:56.8385|DEBUG|Hangfire.Server.Worker|Background process 'Worker #c89086e0' started.
+2019-01-06 17:15:56.8614|DEBUG|Hangfire.Server.Worker|Background process 'Worker #4453eab4' started.
+2019-01-06 17:15:56.9024|DEBUG|Hangfire.Server.Worker|Background process 'Worker #ded1ecef' started.
+2019-01-06 17:15:56.8614|TRACE|Hangfire.SqlServer.CountersAggregator|Records from the 'Counter' table aggregated.
+2019-01-06 17:15:56.9694|DEBUG|Hangfire.Server.Worker|Background process 'Worker #27f6c87f' started.
+2019-01-06 17:15:56.8614|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'AggregatedCounter' table.
+2019-01-06 17:15:57.0433|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Job' table...
+2019-01-06 17:15:57.0603|DEBUG|Hangfire.Server.Worker|Background process 'Worker #3f9ccf4f' started.
+2019-01-06 17:15:57.0433|DEBUG|Hangfire.Server.Worker|Background process 'Worker #a8155ab4' started.
+2019-01-06 17:15:57.0893|DEBUG|Hangfire.Server.Worker|Background process 'Worker #7a73afe1' started.
+2019-01-06 17:15:57.1233|DEBUG|Hangfire.Server.Worker|Background process 'Worker #f9445540' started.
+2019-01-06 17:15:57.1493|DEBUG|Hangfire.Server.Worker|Background process 'Worker #2b4898c5' started.
+2019-01-06 17:15:57.2133|DEBUG|Hangfire.Server.Worker|Background process 'Worker #37aa2b47' started.
+2019-01-06 17:15:57.2472|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Job' table.
+2019-01-06 17:15:57.2632|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'List' table...
+2019-01-06 17:15:57.2632|DEBUG|Hangfire.Server.Worker|Background process 'Worker #9e60b5ed' started.
+2019-01-06 17:15:57.3012|DEBUG|Hangfire.Server.Worker|Background process 'Worker #9dcbd25b' started.
+2019-01-06 17:15:57.3222|DEBUG|Hangfire.Server.Worker|Background process 'Worker #68bd9b88' started.
+2019-01-06 17:15:57.3822|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'List' table.
+2019-01-06 17:15:57.3972|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Set' table...
+2019-01-06 17:15:57.3972|DEBUG|Hangfire.Server.Worker|Background process 'Worker #a553e671' started.
+2019-01-06 17:15:57.3972|DEBUG|Hangfire.Server.Worker|Background process 'Worker #12f35460' started.
+2019-01-06 17:15:57.4401|DEBUG|Hangfire.Server.Worker|Background process 'Worker #7aebb38a' started.
+2019-01-06 17:15:57.4241|DEBUG|Hangfire.Server.Worker|Background process 'Worker #2666c19e' started.
+2019-01-06 17:15:57.4841|DEBUG|Hangfire.Server.DelayedJobScheduler|Background process 'DelayedJobScheduler' started.
+2019-01-06 17:15:57.5641|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Set' table.
+2019-01-06 17:15:57.6001|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Hash' table...
+2019-01-06 17:15:57.5821|DEBUG|Hangfire.Server.RecurringJobScheduler|Background process 'RecurringJobScheduler' started.
+2019-01-06 17:15:57.7110|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Hash' table.
+2019-01-06 17:15:59.1202|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2019-01-06 17:18:15.8278|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2019-01-06 17:18:53.9184|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2019-01-06 17:20:56.9663|DEBUG|Hangfire.SqlServer.CountersAggregator|Aggregating records in 'Counter' table...
+2019-01-06 17:20:57.0183|TRACE|Hangfire.SqlServer.CountersAggregator|Records from the 'Counter' table aggregated.
+2019-01-06 17:20:59.0877|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej
+2019-01-06 17:21:24.0687|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Start installing Hangfire SQL objects...
+2019-01-06 17:21:24.2966|INFO|Hangfire.SqlServer.SqlServerObjectsInstaller|Hangfire SQL objects installed.
+2019-01-06 17:21:24.4098|INFO|Hangfire.BackgroundJobServer|Starting Hangfire Server
+2019-01-06 17:21:24.4618|INFO|Hangfire.BackgroundJobServer|Using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@SKLEP'
+2019-01-06 17:21:24.5097|INFO|Hangfire.BackgroundJobServer|Using the following options for SQL Server job storage:
+2019-01-06 17:21:24.5667|INFO|Hangfire.BackgroundJobServer|    Queue poll interval: 00:00:15.
+2019-01-06 17:21:24.6147|INFO|Hangfire.BackgroundJobServer|Using the following options for Hangfire Server:
+2019-01-06 17:21:24.6596|INFO|Hangfire.BackgroundJobServer|    Worker count: 20
+2019-01-06 17:21:24.7036|INFO|Hangfire.BackgroundJobServer|    Listening queues: 'default'
+2019-01-06 17:21:24.7586|INFO|Hangfire.BackgroundJobServer|    Shutdown timeout: 00:00:15
+2019-01-06 17:21:24.8075|INFO|Hangfire.BackgroundJobServer|    Schedule polling interval: 00:00:15
+2019-01-06 17:21:24.9115|DEBUG|Hangfire.Server.BackgroundProcessingServer|Background process 'BackgroundProcessingServer' started.
+2019-01-06 17:21:25.0564|DEBUG|Hangfire.Server.ServerHeartbeat|Background process 'ServerHeartbeat' started.
+2019-01-06 17:21:25.0564|DEBUG|Hangfire.Server.ServerWatchdog|Background process 'ServerWatchdog' started.
+2019-01-06 17:21:25.0714|DEBUG|Hangfire.SqlServer.ExpirationManager|Background process 'Hangfire.SqlServer.ExpirationManager' started.
+2019-01-06 17:21:25.1084|DEBUG|Hangfire.SqlServer.CountersAggregator|Background process 'Hangfire.SqlServer.CountersAggregator' started.
+2019-01-06 17:21:25.1373|DEBUG|Hangfire.Server.Worker|Background process 'Worker #887473d5' started.
+2019-01-06 17:21:25.1373|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'AggregatedCounter' table...
+2019-01-06 17:21:25.1713|DEBUG|Hangfire.SqlServer.CountersAggregator|Aggregating records in 'Counter' table...
+2019-01-06 17:21:25.1823|DEBUG|Hangfire.Server.Worker|Background process 'Worker #9230a16e' started.
+2019-01-06 17:21:25.1943|DEBUG|Hangfire.Server.Worker|Background process 'Worker #1a855923' started.
+2019-01-06 17:21:25.2293|DEBUG|Hangfire.Server.Worker|Background process 'Worker #0c5f67a5' started.
+2019-01-06 17:21:25.2902|DEBUG|Hangfire.Server.Worker|Background process 'Worker #de05f62d' started.
+2019-01-06 17:21:25.2153|DEBUG|Hangfire.Server.Worker|Background process 'Worker #0a5603b8' started.
+2019-01-06 17:21:25.4351|DEBUG|Hangfire.Server.Worker|Background process 'Worker #f29ebcbd' started.
+2019-01-06 17:21:25.4351|TRACE|Hangfire.SqlServer.CountersAggregator|Records from the 'Counter' table aggregated.
+2019-01-06 17:21:25.5451|DEBUG|Hangfire.Server.Worker|Background process 'Worker #53b96f94' started.
+2019-01-06 17:21:25.5451|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'AggregatedCounter' table.
+2019-01-06 17:21:25.5871|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Job' table...
+2019-01-06 17:21:25.5871|DEBUG|Hangfire.Server.Worker|Background process 'Worker #499d9dc2' started.
+2019-01-06 17:21:25.6310|DEBUG|Hangfire.Server.Worker|Background process 'Worker #071d702e' started.
+2019-01-06 17:21:25.6790|DEBUG|Hangfire.Server.Worker|Background process 'Worker #5c36f3f7' started.
+2019-01-06 17:21:25.7340|DEBUG|Hangfire.Server.Worker|Background process 'Worker #f8a17e21' started.
+2019-01-06 17:21:25.7570|DEBUG|Hangfire.Server.Worker|Background process 'Worker #289f0671' started.
+2019-01-06 17:21:25.7570|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Job' table.
+2019-01-06 17:21:25.8219|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'List' table...
+2019-01-06 17:21:25.8169|DEBUG|Hangfire.Server.Worker|Background process 'Worker #fb56d485' started.
+2019-01-06 17:21:25.8629|DEBUG|Hangfire.Server.Worker|Background process 'Worker #e4c7a875' started.
+2019-01-06 17:21:25.8909|DEBUG|Hangfire.Server.Worker|Background process 'Worker #815d90a4' started.
+2019-01-06 17:21:25.9628|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'List' table.
+2019-01-06 17:21:25.9628|DEBUG|Hangfire.Server.Worker|Background process 'Worker #e5460454' started.
+2019-01-06 17:21:25.9948|DEBUG|Hangfire.Server.Worker|Background process 'Worker #836377be' started.
+2019-01-06 17:21:25.9628|DEBUG|Hangfire.Server.Worker|Background process 'Worker #f2e19f96' started.
+2019-01-06 17:21:26.0558|DEBUG|Hangfire.Server.DelayedJobScheduler|Background process 'DelayedJobScheduler' started.
+2019-01-06 17:21:25.9878|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Set' table...
+2019-01-06 17:21:26.0088|DEBUG|Hangfire.Server.Worker|Background process 'Worker #b52385f5' started.
+2019-01-06 17:21:26.1428|DEBUG|Hangfire.Server.RecurringJobScheduler|Background process 'RecurringJobScheduler' started.
+2019-01-06 17:21:26.2364|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Set' table.
+2019-01-06 17:21:26.2574|DEBUG|Hangfire.SqlServer.ExpirationManager|Removing outdated records from the 'Hash' table...
+2019-01-06 17:21:26.3293|TRACE|Hangfire.SqlServer.ExpirationManager|Outdated records removed from the 'Hash' table.
+2019-01-06 17:21:26.9739|INFO|Sklep_MJ.Controllers.HomeController|Jesteœ na stronie g³ównej

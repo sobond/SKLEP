@@ -7,7 +7,7 @@ namespace Sklep_MJ.Migrations
     {
         public override void Up()
         {
-            SqlFile("../Migrations/ELMAH-1.2-db-SQLServer.sql");
+            SqlFile("../Sklep_MJ/Migrations/ELMAH-1.2-db-SQLServer.sql");
         }
         
         public override void Down()

@@ -205,14 +205,10 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Categories\asp.png" />
-    <Content Include="Content\Categories\aspnet.png" />
     <Content Include="Content\Categories\c.png" />
-    <Content Include="Content\Categories\csharp.png" />
     <Content Include="Content\Categories\css.png" />
     <Content Include="Content\Categories\html.png" />
     <Content Include="Content\Categories\java.png" />
-    <Content Include="Content\Categories\javascript.png" />
-    <Content Include="Content\Categories\jquery.png" />
     <Content Include="Content\Categories\php.png" />
     <Content Include="Content\Categories\xml.png" />
     <Content Include="Content\Courses\irek.png" />

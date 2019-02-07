@@ -1,5 +1,5 @@
 # SKLEP
-ASP.MVC APP
+.NET MVC APP
 
 ## KURS
 http://dev-hobby.pl/asp-net-mvc-sklep/
